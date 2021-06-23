@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import Forms from './Forms';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -31,7 +32,7 @@ export default function TransitionsModal(props) {
   };
 
   return (
-    <div>
+    <Fragment>
       <button type="button" id="loginButton" onClick={handleOpen}>
         Iniciar sesión
       </button>
@@ -44,17 +45,16 @@ export default function TransitionsModal(props) {
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
-          timeout: 500,
+          timeout: 1000,
         }}
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            {/* <h2 id="transition-modal-title">Iniciar sesión</h2>
-            <p id="transition-modal-description">No tienes una cuenta? Regístrate</p> */}
+            <Forms/>
           </div>
         </Fade>
       </Modal>
-    </div>
+    </Fragment>
   );
 }
 

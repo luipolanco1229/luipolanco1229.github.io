@@ -53,6 +53,14 @@
   color: white;
 }
 
+#loginButton {
+  border: none;
+}
+
+.HeaderSigIn {
+  margin-bottom: 200px;
+}
+
 .background_section_product_categories {
   background: black;
   height: 230px;
