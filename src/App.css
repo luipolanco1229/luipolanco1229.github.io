@@ -36,7 +36,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  right: -55%;
+  right: -50%;
 }
 
 .header_startingScreen .button_header {
@@ -55,10 +55,65 @@
 
 #loginButton {
   border: none;
+  background-color: #0d2c5b;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.FormSignIn {
+  max-width: 20vw;
 }
 
 .HeaderSigIn {
-  margin-bottom: 200px;
+  margin-left: 2vw;
+  margin-bottom: 13vh;
+}
+
+.SigIn > div > input {
+  width: 19vw;
+  height: 6vh;
+  margin-bottom: 4vh;
+  border-color: #FF9800;
+}
+
+.Send_signIn {
+  width: 19vw;
+  height: 6vh;
+  background-color: #0d2c5b;
+  border: #0d2c5b;
+  font-weight: bold;
+  color: white;
+}
+
+.messageForm {
+  text-decoration: underline;
+}
+
+.FormSignup {
+  height: 80vh;
+  width: 30vw;
+  overflow-y: scroll;
+}
+
+.HeaderSignUp {
+  margin-left: 7vw;
+  margin-bottom: 13vh;
+}
+
+.Signup > div > input {
+  width: 28vw;
+  height: 6vh;
+  margin-bottom: 4vh;
+}
+
+.Send_signUp {
+  width: 28vw;
+  height: 6vh;
+  background-color: #0d2c5b;
+  border: #0d2c5b;
+  font-weight: bold;
+  color: white;
 }
 
 .background_section_product_categories {
