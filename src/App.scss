@@ -67,13 +67,23 @@ $principalOrange: #FF9800;
         font-weight: bold;
         text-decoration: underline;
   }
+  #loginButton1 {
+        border: none;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+  }
+  #loginButton1:hover {
+       cursor:pointer;
+  }
 
   .FormSignIn{
       max-width: 20vw;
   }
   .HeaderSigIn{
       margin-left: 2vw;
-      margin-bottom: 13vh;
+      margin-bottom: 7vh;
   }
  
   .SigIn>div>input{
@@ -94,6 +104,7 @@ $principalOrange: #FF9800;
 
   .messageForm {
       text-decoration: underline;
+      background-color: white;
   }
 
   
@@ -105,13 +116,20 @@ $principalOrange: #FF9800;
 
   .HeaderSignUp{
       margin-left: 7vw;
-      margin-bottom: 13vh;
+      margin-bottom: 3vh;
+  }
+  hr.blueLine {
+    border: 2px solid $principalBlue;
+    border-radius: 3px;
+    background-color: $principalBlue;
+    margin-bottom: 4vh;
   }
  
   .Signup>div>input{
     width:28vw;
     height:6vh;
     margin-bottom: 4vh;
+    border-color: $principalOrange;
   }
 
   .Send_signUp {

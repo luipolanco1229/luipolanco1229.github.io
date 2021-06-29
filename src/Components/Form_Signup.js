@@ -1,4 +1,5 @@
-import React, { Fragment, useState} from 'react';
+import React, { useState } from 'react';
+
 
 const Forms_Signup = () => {
 
@@ -8,7 +9,7 @@ const Forms_Signup = () => {
         email: '',
         adress: '',
         userName: '',
-        password:''
+        password1:''
     } 
     );
 
@@ -31,6 +32,7 @@ const Forms_Signup = () => {
              <div className="HeaderSignUp">
                  <h1>Registrarse</h1>
              </div>
+             <hr class="blueLine"></hr>
               <form className="Signup" onSubmit={sendData} > 
                 
                  <div clasName="Items_form_signup">
@@ -85,8 +87,8 @@ const Forms_Signup = () => {
                       <p>Contraseña</p>
                       <input 
                       placeholder="Cree una contraseña"
-                      type="password"
-                      name="password"
+                      type="password1"
+                      name="password1"
                       onChange={HandleInputChange}>
 
                       </input>

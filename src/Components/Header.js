@@ -14,7 +14,7 @@ const Header = () => {
                     <button className="button_header"><a href="#jump_start" className="a_items_header">Inicio</a></button>
                     <button className="button_header"><a href="#jump_about_us" className="a_items_header"> Sobre nosotros</a></button>
                     <button className="button_header"><a href="#jump_contact" className="a_items_header">Contacto</a></button>
-                    <Modal  state={false} />
+                    <Modal/>
                 </div>
         </header>
         

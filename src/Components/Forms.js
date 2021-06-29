@@ -1,6 +1,6 @@
 import React, { Fragment, useState} from 'react';
-import Forms_Signup from './Form_Signup';
-// import FormsUp from "./Form_Signup";
+import ModalSU from './ModalSU';
+
 
 const Forms = () => {
 
@@ -54,9 +54,9 @@ const Forms = () => {
                  <div clasName="div_send_sigIn">
                      <button className="Send_signIn" type="submit">Iniciar sesión</button>
                  </div>
-                
-                 {/* <p>Si no tienes una cuenta <span class="messageForm"><a href={FormsUp}>Regístrate</a> </span></p> */}
+                   <p>Si no tienes una cuenta<ModalSU/></p>
              </form>
+             
          </div>
      )
 }

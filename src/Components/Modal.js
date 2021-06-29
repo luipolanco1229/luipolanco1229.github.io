@@ -5,6 +5,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Forms from './Forms';
 
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -23,11 +24,11 @@ export default function TransitionsModal(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = (state) => {
+  const handleOpen = () => {
     setOpen(true);
   };
 
-  const handleClose = (state) => {
+  const handleClose = () => {
     setOpen(false);
   };
 

@@ -3,13 +3,11 @@ import CategoryComputers from './CategoryComputers';
 import CategoryTvs from './CategoryTvs';
 import CategorySmarthphones from './CategorySmarthphones';
 import CategoryGadgets from './CategoryGadgets';
-
-
  
 
 const ProductCategories = () => {
     
-    return <div className="background_section_product_categories">
+    return (<div className="background_section_product_categories">
         <div className="div_category_product">
             <div className="categoryProduct">
                 <CategoryTvs/>
@@ -41,13 +39,8 @@ const ProductCategories = () => {
         </div>
 
        
-       
-       
-      
-       
-       
     </div>
-    
+    )
 
 
 }
