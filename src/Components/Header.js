@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Modal from "./Modal";
 
 
@@ -6,11 +6,11 @@ import Modal from "./Modal";
 
 const Header = () => {
   return (
-    <div>
+    <Fragment>
       <header className="header_startingScreen">
         <div id="title_store">
           <h1>
-            <a href="#jump_start">TECHNOVA</a>
+            <a href="/">TECHNOVA</a>
           </h1>
         </div>
         <div className="header_side_right">
@@ -33,7 +33,7 @@ const Header = () => {
           <Modal />
         </div>
       </header>
-    </div>
+    </Fragment>
   );
 };
 export default Header;
