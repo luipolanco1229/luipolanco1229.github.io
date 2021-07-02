@@ -10,21 +10,21 @@ const PromotedProducts = () => {
                <h4>1</h4>
             </div>
             <div>
-            <h4>1</h4>
+            <h4>2</h4>
             </div>
             <div>
-            <h4>1</h4>
+            <h4>3</h4>
             </div>
         </div>
         <div className="subdivision_two_promoted_products">
             <div>
-            <h4>1</h4>
+            <h4>4</h4>
             </div>
             <div>
-            <h4>1</h4>
+            <h4>5</h4>
             </div>
             <div>
-            <h4>1</h4>
+            <h4>6</h4>
             </div>
         </div>
     </div>

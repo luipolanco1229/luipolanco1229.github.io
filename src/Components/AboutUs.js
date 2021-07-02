@@ -13,7 +13,7 @@ const AboutUs = () => {
         </div>
         <div className="div_items_about_us">
             <div className="items_about_us">
-                <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us"></img>
+                <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
                 <h3 className="title_about_us">Lorem</h3>
                 <h5 className="text_items_about_us">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!
@@ -21,7 +21,7 @@ const AboutUs = () => {
             </div>
             <div className="line_items_about_us"></div>
             <div className="items_about_us">
-                <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us"></img>
+                <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
                 <h3 className="title_about_us">Lorem</h3>
                 <h5 className="text_items_about_us">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!
@@ -29,7 +29,7 @@ const AboutUs = () => {
             </div>
             <div className="line_items_about_us"></div>
             <div className="items_about_us">
-            <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us"></img>
+            <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
                 <h3 className="title_about_us">Lorem</h3>
                 <h5 className="text_items_about_us">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!

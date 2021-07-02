@@ -33,8 +33,9 @@ $principalOrange: #FF9800;
 
     .header_side_right{
         position: relative; 
+        display: inline-block;
         width: 100%;
-        right: -55%;
+        right: -50%;
         
         
     }
@@ -43,6 +44,8 @@ $principalOrange: #FF9800;
         border: none; 
         background: none; 
         color: white; 
+        margin-left: 1vw;
+        font-weight: bold;
         
         .a_items_header{
             text-decoration: none; 
@@ -53,6 +56,90 @@ $principalOrange: #FF9800;
 }
 
 
+//   #userPhoto{
+//       height:50px;
+//       width: auto;
+//   }
+  #loginButton {
+        border: none;
+        background-color: $principalBlue;
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+  }
+  #loginButton1 {
+        border: none;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+  }
+  #loginButton1:hover {
+       cursor:pointer;
+  }
+
+  .FormSignIn{
+      max-width: 20vw;
+  }
+  .HeaderSigIn{
+      margin-left: 2vw;
+      margin-bottom: 7vh;
+  }
+ 
+  .SigIn>div>input{
+    width:19vw;
+    height:6vh;
+    margin-bottom: 4vh;
+    border-color: $principalOrange;
+  }
+
+  .Send_signIn {
+      width: 19vw;
+      height:6vh;
+      background-color: $principalBlue;
+      border: $principalBlue;
+      font-weight: bold;
+      color:white;
+  }
+
+  .messageForm {
+      text-decoration: underline;
+      background-color: white;
+  }
+
+  
+  .FormSignup {
+      height: 80vh;
+      width: 30vw;
+      overflow-y: scroll;
+  }
+
+  .HeaderSignUp{
+      margin-left: 7vw;
+      margin-bottom: 3vh;
+  }
+  hr.blueLine {
+    border: 2px solid $principalBlue;
+    border-radius: 3px;
+    background-color: $principalBlue;
+    margin-bottom: 4vh;
+  }
+ 
+  .Signup>div>input{
+    width:28vw;
+    height:6vh;
+    margin-bottom: 4vh;
+    border-color: $principalOrange;
+  }
+
+  .Send_signUp {
+    width: 28vw;
+    height:6vh;
+    background-color: $principalBlue;
+    border: $principalBlue;
+    font-weight: bold;
+    color:white;
+}
 
 .background_section_product_categories{
     background: black;

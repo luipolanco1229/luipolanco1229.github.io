@@ -8,7 +8,7 @@ const CategorySmarthphones = () => {
          <div className="icons_productCategory">
           <div className="icon_product_div">
 
-            <img src={Gadgets} className="icon_product" ></img>
+            <img src={Gadgets} className="icon_product" alt="icon_product"></img>
           </div>
 
         </div>
