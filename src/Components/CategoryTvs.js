@@ -1,5 +1,5 @@
 import React from 'react';
-import television from '../Icons/television.png'
+import television from '../Icons/television.png';
 
 const CategoryTvs = () => {
     
