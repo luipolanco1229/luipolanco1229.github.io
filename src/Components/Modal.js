@@ -1,20 +1,19 @@
-import React, { Fragment, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
-import FormSI from './FormSI';
-
+import React, { Fragment, useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Modal from "@material-ui/core/Modal";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import FormSI from "./FormSI";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
@@ -34,8 +33,15 @@ export default function TransitionsModal(props) {
 
   return (
     <Fragment>
-      <button type="button" id="loginButton" onClick={handleOpen}>
-        Iniciar sesión
+      <button
+        className="button_header"
+        type="button"
+        id="loginButton"
+        onClick={handleOpen}
+      >
+        <span className="a_items_header">
+          Iniciar sesión
+        </span>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -51,12 +57,10 @@ export default function TransitionsModal(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <FormSI/>
+            <FormSI />
           </div>
         </Fade>
       </Modal>
     </Fragment>
   );
 }
-
- 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Forms_Signup = () => {
   const [Information, setInformation] = useState({
     names: "",
@@ -26,10 +27,13 @@ const Forms_Signup = () => {
   return (
     <div className="FormSignup">
       <div className="HeaderSignUp">
-        <h1>Registrarse</h1>
+        <div>
+         <h1>Registrarse</h1>
+        </div>
       </div>
       <hr class="blueLine"></hr>
       <form className="Signup" onSubmit={sendData}>
+        
         <div clasName="Items_form_signup">
           <p>Nombres</p>
           <input
@@ -37,6 +41,7 @@ const Forms_Signup = () => {
             type="text"
             name="names"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -46,6 +51,7 @@ const Forms_Signup = () => {
             type="text"
             name="lastNames"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -55,6 +61,7 @@ const Forms_Signup = () => {
             type="email"
             name="email"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -63,6 +70,7 @@ const Forms_Signup = () => {
             placeholder="Ej. Antioquia, Envigado. CL 12#34"
             name="adress"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -72,6 +80,7 @@ const Forms_Signup = () => {
             type="text"
             name="userName"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -81,6 +90,7 @@ const Forms_Signup = () => {
             type="password"
             name="password"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="div_send_signUp">

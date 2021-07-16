@@ -4,7 +4,7 @@ import television from "../Icons/television.png";
 const CategoryTvs = () => {
   return (
     <Fragment>
-        <div className="icon_product_div">
+        <div className="icon_product_div" >
           <img
             src={television}
             className="icon_product"

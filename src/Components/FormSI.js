@@ -34,6 +34,7 @@ const Forms = () => {
             type="email"
             name="user"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signIn">
@@ -43,6 +44,7 @@ const Forms = () => {
             type="password"
             name="password"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="div_send_sigIn">
