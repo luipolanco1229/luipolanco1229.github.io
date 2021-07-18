@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import ModalSU from "./ModalSU";
 
 const Forms = () => {
@@ -51,7 +51,7 @@ const Forms = () => {
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>
-      <form className="SigIn" onSubmit={sendData}>
+      <form className="SigIn" method="post">
         <div clasName="Items_form_signIn">
           <p>Correo o nombre usuario</p>
           <input
@@ -59,6 +59,7 @@ const Forms = () => {
             type="email"
             name="user"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signIn">
@@ -68,10 +69,11 @@ const Forms = () => {
             type="password"
             name="password"
             onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="div_send_sigIn">
-          <button className="Send_signIn" type="submit">
+          <button className="Send_signIn" type="submit" >
             Iniciar sesión
           </button>
         </div>

@@ -1,17 +1,20 @@
-import React from "react";
-import Modal from "./Modal";
-
+import React, { Fragment } from "react";
+import Modal from "./Modal.js";
+import logo from "../Icons/technova-logo1.jpg";
 
 // import user from "../Icons/user.png";
 
 const Header = () => {
   return (
-    <div>
+    <Fragment>
       <header className="header_startingScreen">
         <div id="title_store">
-          <h1>
-            <a href="#jump_start">TECHNOVA</a>
-          </h1>
+          <div className="divHeaderT">
+            <img src={logo} alt="logo" height="auto" width="100vw"></img>
+            <h1>
+              <a href="/">TECHNOVA</a>
+            </h1>
+          </div>
         </div>
         <div className="header_side_right">
           <button className="button_header">
@@ -21,7 +24,6 @@ const Header = () => {
           </button>
           <button className="button_header">
             <a href="#jump_about_us" className="a_items_header">
-              {" "}
               Sobre nosotros
             </a>
           </button>
@@ -33,7 +35,7 @@ const Header = () => {
           <Modal />
         </div>
       </header>
-    </div>
+    </Fragment>
   );
 };
 export default Header;

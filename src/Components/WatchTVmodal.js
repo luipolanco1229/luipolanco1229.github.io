@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
-import FormSingIn from './Form_SignIn';
+import React, { Fragment } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Modal from "@material-ui/core/Modal";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import WatchTVproducts from "./WatchTVproducts";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,19 +31,15 @@ export default function TransitionsModal(props) {
   const handleClose = () => {
     setOpen(false);
   };
+  const handleClose1 = () => {
+    console.log('hola');
+  };
 
   return (
     <Fragment>
-      <button
-        className="button_header"
-        type="button"
-        id="loginButton"
-        onClick={handleOpen}
-      > 
-        <span className="a_items_header">
-          Iniciar sesión
-        </span>
-      </button>
+        <div className="div_text_category" onClick={handleOpen}>
+          <h4 className="name_category_product"> Televisores</h4>
+        </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -52,17 +48,13 @@ export default function TransitionsModal(props) {
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
-        BackdropProps={{ 
+        BackdropProps={{
           timeout: 1000,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
-<<<<<<< HEAD
-            <FormSingIn/>
-=======
-            <FormSI />
->>>>>>> ce4e3b914a3adead938509610fad412a634eda36
+         <Fade in={open}>
+          <div className ={classes.paper}>
+            <WatchTVproducts />
           </div>
         </Fade>
       </Modal>

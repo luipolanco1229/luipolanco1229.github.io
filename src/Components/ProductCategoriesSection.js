@@ -3,45 +3,48 @@ import CategoryComputers from "./CategoryComputers";
 import CategoryTvs from "./CategoryTvs";
 import CategorySmarthphones from "./CategorySmarthphones";
 import CategoryGadgets from "./CategoryGadgets";
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-// import WatchCategories from './WatchProductCategories';
+import WatchTVmodal from "./WatchTVmodal";
 
 const ProductCategories = () => {
   return (
-
     <div className="background_section_product_categories">
-     
       <div className="div_category_product">
         <div className="categoryProduct">
-        <CategoryTvs />
-          {/* < Router>
-            <Link to="/WatchProductCategories"><CategoryTvs /></Link>
-            <Route exact path="/WatchProductCategories" component={WatchCategories}/>
-          </Router> */}
-            
+          <div className="div_img_category">
+            <CategoryTvs />
+          </div>
         </div>
-        <h4 className="name_category_product"> &nbsp; &nbsp; Televisores</h4>
+        <WatchTVmodal/>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
-          <CategoryComputers />
+          <div className="div_img_category">
+            <CategoryComputers />
+          </div>
         </div>
-        <h4 className="name_category_product">Computadores</h4>
+        <div className="div_text_category">
+          <h4 className="name_category_product">Computadores</h4>
+        </div>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
-          <CategorySmarthphones />
+          <div className="div_img_category">
+            <CategorySmarthphones />
+          </div>
         </div>
-        <h4 className="name_category_product">Smarthphones</h4>
+        <div className="div_text_category">
+          <h4 className="name_category_product">Smarthphones</h4>
+        </div>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
-          <CategoryGadgets />
+          <div className="div_img_category">
+            <CategoryGadgets />
+          </div>
         </div>
-        <h4 className="name_category_product">
-          {" "}
-          &nbsp; &nbsp; &nbsp;Accesorios
-        </h4>
+        <div className="div_text_category">
+          <h4 className="name_category_product">Accesorios</h4>
+        </div>
       </div>
       
     </div>

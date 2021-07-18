@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Forms_Signup = () => {
   const [Information, setInformation] = useState({
     names: "",
@@ -63,17 +64,21 @@ const Forms_Signup = () => {
   return (
     <div className="FormSignup">
       <div className="HeaderSignUp">
-        <h1>Registrarse</h1>
+        <div>
+         <h1>Registrarse</h1>
+        </div>
       </div>
       <hr class="blueLine"></hr>
       <form className="Signup" onSubmit={sendData}>
+        
         <div clasName="Items_form_signup">
           <p>Nombres</p>
           <input
             placeholder="Ej. Miguel Ángel"
             type="text"
             name="names"
-           // onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -82,7 +87,8 @@ const Forms_Signup = () => {
             placeholder="Ej. Rivera Castillo"
             type="text"
             name="lastNames"
-            //onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -91,7 +97,8 @@ const Forms_Signup = () => {
             placeholder="Ej. usuario@gmail.com"
             type="email"
             name="email"
-            //onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -99,7 +106,8 @@ const Forms_Signup = () => {
           <input
             placeholder="Ej. Antioquia, Envigado. CL 12#34"
             name="adress"
-            //onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -108,7 +116,8 @@ const Forms_Signup = () => {
             placeholder="Ej. Miguela101"
             type="text"
             name="userName"
-            //onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -117,7 +126,8 @@ const Forms_Signup = () => {
             placeholder="Cree una contraseña"
             type="password"
             name="password"
-            //onChange={HandleInputChange}
+            onChange={HandleInputChange}
+            required
           ></input>
         </div>
         <div clasName="div_send_signUp">

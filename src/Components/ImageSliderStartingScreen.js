@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../App.css';
 import developer from '../Images/developer.jpg'
 import people_and_phones from '../Images/people_and_phones.jpg'
@@ -9,7 +9,7 @@ import people_watching_tv from '../Images/people_watching_tv.jpg'
 
 
 const SlideShowStartingScreen = () => {
- return <div>      
+ return <Fragment>      
 
     <div className="slider" >
         <input type="radio" name="slider" checked="checked"></input>
@@ -43,6 +43,6 @@ const SlideShowStartingScreen = () => {
         </div>
 
        </div>
-    </div>
+    </Fragment>
 }
 export default SlideShowStartingScreen;
