@@ -11,16 +11,53 @@ const Forms_Signup = () => {
   });
 
   const HandleInputChange = (event) => {
-    console.log(event.target.value);
     setInformation({
       ...Information,
       [event.target.name]: event.target.value,
     });
   };
-
+  
   const sendData = () => {
-    //    event.preventDefault()
-    //     console.log('enviando datos...' + Information.user + ' ' + Information.password)
+     var formData = new FormData();
+     
+     if(Information.names != "" && 
+        Information.lastNames != "" && 
+        Information.email != ""  && 
+        Information.adress != "" && 
+        Information.userName != "" && 
+        Information.password != "" ){
+
+          formData.append("nombre", Information.names)
+          formData.append("apellidos", Information.lastNames)
+          formData.append("correo_electronico", Information.email)      
+          formData.append("direccion", Information.adress)      
+          formData.append("nombre_de_usuario", Information.userName)      
+          formData.append("userPassword", Information.password)
+          
+          
+          fetch("http://localhost/Technova/user.php", {      
+            method: "POST",
+            body: formData,
+              headers: {
+                'Accept': 'application/json'
+              },
+            })
+            .then((user) => {         
+              setInformation({ 
+                names: "",
+              lastNames: "",
+              email: "",
+              adress: "",
+              userName: "",
+              password: "",}) 
+            });         
+            alert('Usuario creado con exito')
+
+
+          }else {
+            alert('Tienes que llenar todos los campos')
+    }  
+    
   };
 
   return (
@@ -36,7 +73,7 @@ const Forms_Signup = () => {
             placeholder="Ej. Miguel Ángel"
             type="text"
             name="names"
-            onChange={HandleInputChange}
+           // onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -45,7 +82,7 @@ const Forms_Signup = () => {
             placeholder="Ej. Rivera Castillo"
             type="text"
             name="lastNames"
-            onChange={HandleInputChange}
+            //onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -54,7 +91,7 @@ const Forms_Signup = () => {
             placeholder="Ej. usuario@gmail.com"
             type="email"
             name="email"
-            onChange={HandleInputChange}
+            //onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -62,7 +99,7 @@ const Forms_Signup = () => {
           <input
             placeholder="Ej. Antioquia, Envigado. CL 12#34"
             name="adress"
-            onChange={HandleInputChange}
+            //onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -71,7 +108,7 @@ const Forms_Signup = () => {
             placeholder="Ej. Miguela101"
             type="text"
             name="userName"
-            onChange={HandleInputChange}
+            //onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="Items_form_signup">
@@ -80,11 +117,11 @@ const Forms_Signup = () => {
             placeholder="Cree una contraseña"
             type="password"
             name="password"
-            onChange={HandleInputChange}
+            //onChange={HandleInputChange}
           ></input>
         </div>
         <div clasName="div_send_signUp">
-          <button className="Send_signUp" type="submit">
+          <button className="Send_signUp" >
             Crear cuenta
           </button>
         </div>

@@ -209,7 +209,7 @@ hr.blueLine {
   color: #ababab;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 2000px) {
   .categoryProduct {
     background-color: white;
     width: 110px;
@@ -225,12 +225,12 @@ hr.blueLine {
   }
   .categoryProduct .icon_product_div {
     width: 110px;
-    margin-left: 20%;
+    margin-left: 17%;
   }
   .div_category_product {
     margin-top: 70px;
     margin-bottom: 30px;
-    margin-left: 9%;
+    margin-left: 12%;
     margin-right: 5%;
     cursor: pointer;
     color: white;

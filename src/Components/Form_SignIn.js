@@ -7,18 +7,43 @@ const Forms = () => {
     password: "",
   });
 
+  function isUser (user) {
+    if(user == false){
+      alert('No estás registrado')
+    }else{
+      alert ('Bienvenido a Technova')
+    }
+  }
+
   const HandleInputChange = (event) => {
-    console.log(event.target.value);
     setInformation({
       ...Information,
       [event.target.name]: event.target.value,
-      [event.target.password]: event.target.value,
     });
   };
 
   const sendData = () => {
-    //    event.preventDefault()
-    //     console.log('enviando datos...' + Information.user + ' ' + Information.password)
+
+    var formData = new FormData(); 
+
+    if(Information.user != "" && Information.password != ""){
+
+      formData.append("nombre_de_usuario", Information.user)
+      formData.append("userPassword", Information.password)
+
+      fetch("",{
+        method: "GET",
+        body: formData, 
+        headers: {
+          'Accept': 'application/json'
+        },        
+      })
+      .then((user) => {
+        isUser(user)        
+      });      
+    }else{
+      alert('Tienes que llenar todos los campos')
+    }    
   };
 
   return (
