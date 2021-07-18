@@ -1,8 +1,10 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import WatchTVproducts from "./WatchTVproducts";
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -13,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
-    boxShadow: theme.shadows[10],
+    boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
 }));
@@ -28,6 +30,9 @@ export default function TransitionsModal(props) {
 
   const handleClose = () => {
     setOpen(false);
+  };
+  const handleClose1 = () => {
+    console.log('hola');
   };
 
   return (
@@ -47,9 +52,9 @@ export default function TransitionsModal(props) {
           timeout: 1000,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <h1>Hola</h1>
+         <Fade in={open}>
+          <div className ={classes.paper}>
+            <WatchTVproducts />
           </div>
         </Fade>
       </Modal>

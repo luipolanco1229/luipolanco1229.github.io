@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import ModalSU from "./ModalSU";
 
 const Forms = () => {
@@ -16,17 +16,17 @@ const Forms = () => {
     });
   };
 
-  const sendData = () => {
-    //    event.preventDefault()
-    //     console.log('enviando datos...' + Information.user + ' ' + Information.password)
-  };
+  // const sendData = () => {
+  //   //    event.preventDefault()
+  //   //     console.log('enviando datos...' + Information.user + ' ' + Information.password)
+  // };
 
   return (
     <div className="FormSignIn">
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>
-      <form className="SigIn" onSubmit={sendData}>
+      <form className="SigIn" method="post">
         <div clasName="Items_form_signIn">
           <p>Correo o nombre usuario</p>
           <input
@@ -48,7 +48,7 @@ const Forms = () => {
           ></input>
         </div>
         <div clasName="div_send_sigIn">
-          <button className="Send_signIn" type="submit">
+          <button className="Send_signIn" type="submit" >
             Iniciar sesión
           </button>
         </div>

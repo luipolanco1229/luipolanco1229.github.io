@@ -1,7 +1,4 @@
 import React from 'react';
-import developer from '../Images/developer.jpg'
-import people_and_phones from '../Images/people_and_phones.jpg'
-import people_watching_tv from '../Images/people_watching_tv.jpg'
 
 const PromotedProducts = () => {
     return <div className="div_promoted_products">

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -38,7 +38,7 @@ export default function TransitionsModal(props) {
         type="button"
         id="loginButton"
         onClick={handleOpen}
-      >
+      > 
         <span className="a_items_header">
           Iniciar sesión
         </span>
@@ -51,7 +51,7 @@ export default function TransitionsModal(props) {
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
-        BackdropProps={{
+        BackdropProps={{ 
           timeout: 1000,
         }}
       >

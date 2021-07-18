@@ -3,7 +3,7 @@ import CategoryComputers from "./CategoryComputers";
 import CategoryTvs from "./CategoryTvs";
 import CategorySmarthphones from "./CategorySmarthphones";
 import CategoryGadgets from "./CategoryGadgets";
-import WatchProductCategories from "./WatchProductCategories";
+import WatchTVmodal from "./WatchTVmodal";
 
 const ProductCategories = () => {
   return (
@@ -14,7 +14,7 @@ const ProductCategories = () => {
             <CategoryTvs />
           </div>
         </div>
-        <WatchProductCategories/>
+        <WatchTVmodal/>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
@@ -46,13 +46,7 @@ const ProductCategories = () => {
           <h4 className="name_category_product">Accesorios</h4>
         </div>
       </div>
-      {/* <Router>
-        <Link to="Products.js">s</Link>
-      </Router>
-
-      <Switch>
-        <Route path="Products.js" component={Products} />
-      </Switch> */}
+      
     </div>
   );
 };
