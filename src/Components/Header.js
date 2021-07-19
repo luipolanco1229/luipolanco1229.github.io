@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Modal from "./Modal.js";
+import ModalSI from "./ModalSI.js";
 import logo from "../Icons/technova-logo1.jpg";
 
 // import user from "../Icons/user.png";
@@ -32,7 +32,7 @@ const Header = () => {
               Contacto
             </a>
           </button>
-          <Modal />
+          <ModalSI />
         </div>
       </header>
     </Fragment>

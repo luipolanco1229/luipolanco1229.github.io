@@ -1,7 +1,8 @@
 import React from "react";
+import ProductModal from './ModalViewIndividualP';
 
 const WatchTVproducts = () => {
-  //   const { handleClose1 } = props;
+ 
 
   return (
     <div className="sectionBackground">
@@ -20,8 +21,11 @@ const WatchTVproducts = () => {
               <div className="productPrice">2M</div>
             </div>
           </div>
-          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex? </p></div> 
+          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex? </p>
+          <ProductModal/>
+          </div> 
         </div>
+
         <div className="gridProductItem">
           <div className="productCardTop">
             <div className="imgGrid">img</div>
@@ -30,8 +34,11 @@ const WatchTVproducts = () => {
               <div className="productPrice">2M</div>
             </div>
           </div>
-          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex?</p></div> 
+          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex?</p>
+          <div className="watchProduct">Más detalles</div>
+          </div> 
         </div>
+
         <div className="gridProductItem">
           <div className="productCardTop">
             <div className="imgGrid">img</div>
@@ -40,7 +47,9 @@ const WatchTVproducts = () => {
               <div className="productPrice">2M</div>
             </div>
           </div>
-          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex? </p></div> 
+          <div className="productCardBottom"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex? </p>
+          <div className="watchProduct">Más detalles</div>
+          </div> 
         </div>
         
 
