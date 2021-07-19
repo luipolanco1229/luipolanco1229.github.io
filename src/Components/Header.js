@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import ModalSI from "./ModalSI.js";
+import ModalSI from "./ModalSI";
 import logo from "../Icons/technova-logo1.jpg";
 
 // import user from "../Icons/user.png";
