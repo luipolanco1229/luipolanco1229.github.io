@@ -26,9 +26,6 @@ $principalOrange: #ff9800;
     text-decoration: none;
     color: white;
   }
-  #title_store {
-    margin-right: 40vw;
-  }
 
   .divHeaderT {
     display: flex;
@@ -639,6 +636,7 @@ hr.blueLine {
 }
 
 .contact_footer {
+  margin-left: 5vw;
   display: flex;
   align-items: center;
 }
@@ -646,11 +644,10 @@ hr.blueLine {
 .footer_side_left {
   display: flex;
   justify-content: left;
-  
 }
 
 .contact_footer_info {
-  margin-left: 50px;
+  margin-left: 4vw;
 }
 
 .footer_side_right {
@@ -665,7 +662,7 @@ hr.blueLine {
 }
 
 .icons_social_media{
-  margin-left: 100px;
+  margin-left: 20vw;
   margin-top: 20px;
 }
 

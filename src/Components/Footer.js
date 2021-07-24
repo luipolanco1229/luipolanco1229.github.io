@@ -30,10 +30,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="icons_social_media">
-                <a href= "https://www.instagram.com/" target="blank"><img src={InstagramIcon} className="icons_footer"></img></a>
-                <a href= "https://www.whatsapp.com/" target="blank"><img src={WhatsappIcon} className="icons_footer"></img></a>
-                <a href= "https://www.twitter.com/" target="blank"><img src={TwitterIcon} className="icons_footer"></img></a>
-                <a href= "https://www.facebook.com/" target="blank"><img src={FacebookIcon} className="icons_footer"></img></a>
+                <a href= "https://www.instagram.com/" target="blank"><img src={InstagramIcon} className="icons_footer" alt="redSocial"></img></a>
+                <a href= "https://www.whatsapp.com/" target="blank"><img src={WhatsappIcon} className="icons_footer" alt="redSocial"></img></a>
+                <a href= "https://www.twitter.com/" target="blank"><img src={TwitterIcon} className="icons_footer" alt="redSocial"></img></a>
+                <a href= "https://www.facebook.com/" target="blank"><img src={FacebookIcon} className="icons_footer" alt="redSocial"></img></a>
             </div>  
 
 

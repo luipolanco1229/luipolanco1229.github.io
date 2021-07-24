@@ -36,8 +36,8 @@ const Header = () => {
             <a href="#jump_contact" className="a_items_header">
               Contacto
             </a>
-          </nav>
           {HasAccount === true ?  <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
+         </nav>
         </div>
           
       </header>

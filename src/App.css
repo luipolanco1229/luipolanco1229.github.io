@@ -31,10 +31,6 @@
   color: white;
 }
 
-.header_startingScreen #title_store {
-  margin-right: 40vw;
-}
-
 .header_startingScreen .divHeaderT {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,6 +703,7 @@
             align-items: center;
   }
   .contact_footer {
+    margin-left: 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -723,7 +720,7 @@
             justify-content: left;
   }
   .contact_footer_info {
-    margin-left: 50px;
+    margin-left: 4vw;
   }
   .footer_side_right {
     display: -webkit-box;
@@ -737,7 +734,7 @@
     margin-left: 20px;
   }
   .icons_social_media {
-    margin-left: 100px;
+    margin-left: 20vw;
     margin-top: 20px;
   }
   .allies_footer {
