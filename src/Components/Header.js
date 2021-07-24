@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import Modal from "./Modal.js";
+import ModalSI from "./ModalSI";
 import logo from "../Icons/technova-logo1.jpg";
 
 
@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    // <Fragment>
+    <Fragment>
       <header className="header_startingScreen">
         <div id="title_store">
           <div className="divHeaderT">
@@ -41,10 +41,11 @@ const Header = () => {
             </a>
           </button>
           
-          {HasAccount === true ?  <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="user" className="user_photo"></img> :  <Modal className="button_header" userPhotoState = {userPhotoState}/> }
+          {HasAccount === true ?  <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
         </div>
           
       </header>
+      </Fragment>
     
   );
 };

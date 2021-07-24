@@ -1,10 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import WatchTVproducts from "./WatchTVproducts";
-
+import IndividualProduct from "./ViewIndividualProduct";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -31,13 +30,11 @@ export default function TransitionsModal(props) {
   const handleClose = () => {
     setOpen(false);
   };
- 
 
   return (
     <Fragment>
-        <div className="div_text_category" onClick={handleOpen}>
-          <h4 className="name_category_product"> Televisores</h4>
-        </div>
+      <div className="watchProduct" onClick={handleOpen}>Más detalles</div>
+        
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -46,13 +43,13 @@ export default function TransitionsModal(props) {
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
-        BackdropProps={{
+        BackdropProps={{ 
           timeout: 1000,
         }}
       >
-         <Fade in={open}>
-          <div className ={classes.paper}>
-            <WatchTVproducts />
+        <Fade in={open}>
+          <div className={classes.paper}>
+            <IndividualProduct />
           </div>
         </Fade>
       </Modal>
