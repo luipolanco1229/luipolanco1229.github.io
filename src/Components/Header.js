@@ -1,12 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Modal from "./Modal.js";
 import logo from "../Icons/technova-logo1.jpg";
 
+
 // import user from "../Icons/user.png";
 
-const Header = () => {
+const Header = () => { 
+  
+  const [HasAccount, setHasAccount] = useState(false)
+
+  const userPhotoState = (user) => {
+    setHasAccount(user)
+  }
+
   return (
-    <Fragment>
+    // <Fragment>
       <header className="header_startingScreen">
         <div id="title_store">
           <div className="divHeaderT">
@@ -32,10 +40,12 @@ const Header = () => {
               Contacto
             </a>
           </button>
-          <Modal />
+          
+          {HasAccount === true ?  <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="user" className="user_photo"></img> :  <Modal className="button_header" userPhotoState = {userPhotoState}/> }
         </div>
+          
       </header>
-    </Fragment>
+    
   );
 };
 export default Header;

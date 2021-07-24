@@ -27,7 +27,7 @@ $principalOrange: #ff9800;
     color: white;
   }
   #title_store {
-    margin-right: 45vw;
+    margin-right: 40vw;
   }
 
   .divHeaderT {
@@ -36,8 +36,8 @@ $principalOrange: #ff9800;
   }
 
   .header_side_right {
-    position: relative;
-    display: inline-block;
+    // position: relative;
+    // display: inline-block;
     width: 100%;
   }
   .button_header {
@@ -55,10 +55,12 @@ $principalOrange: #ff9800;
   }
 }
 
-//   #userPhoto{
-//       height:50px;
-//       width: auto;
-//   }
+.user_photo{
+  border: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+}
 
 #loginButton {
   border: none;
@@ -134,16 +136,6 @@ $principalOrange: #ff9800;
         border: 4px solid $principalOrange; 
         display: flex; 
         align-items: center; 
-        
-       
-       .icon_product_div{
-           width: 110px; 
-           margin-left: 17%; 
-
-            .icon_Product{
-               
-            }
-       }
     }
     .div_category_product{
         margin-top: 70px; 
@@ -181,7 +173,7 @@ hr.blueLine {
 }
 
 .background_section_product_categories {
-  background: black;
+  background-image: url(https://i.pinimg.com/originals/51/a3/73/51a373c8546364bf1aaaaa65d369e328.gif);
   min-height: 37vh;
   min-width: 100vw;
   display: flex;
@@ -521,7 +513,7 @@ hr.blueLine {
 .footer_side_left {
   display: flex;
   justify-content: left;
-  margin-left: 50px;
+  
 }
 
 .contact_footer_info {
@@ -530,7 +522,18 @@ hr.blueLine {
 
 .footer_side_right {
   display: flex;
-  margin-left: 300px;
+  margin-left: 100px;
+}
+
+.icons_footer{
+  width: 50px;
+  height: 50px; 
+  margin-left: 20px;
+}
+
+.icons_social_media{
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .allies_footer {

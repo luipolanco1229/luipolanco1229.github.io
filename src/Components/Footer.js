@@ -1,4 +1,9 @@
 import React from 'react';
+import InstagramIcon from '../Icons/instagram.png'; 
+import TwitterIcon from '../Icons/gorjeo.png'; 
+import WhatsappIcon from '../Icons/whatsapp.png'; 
+import FacebookIcon from '../Icons/facebook.png'; 
+
 
 const Footer = () => {
 
@@ -24,6 +29,12 @@ const Footer = () => {
                     <h4>Samsung</h4>
                 </div>
             </div>
+            <div className="icons_social_media">
+                <a href= "https://www.instagram.com/" target="blank"><img src={InstagramIcon} className="icons_footer"></img></a>
+                <a href= "https://www.whatsapp.com/" target="blank"><img src={WhatsappIcon} className="icons_footer"></img></a>
+                <a href= "https://www.twitter.com/" target="blank"><img src={TwitterIcon} className="icons_footer"></img></a>
+                <a href= "https://www.facebook.com/" target="blank"><img src={FacebookIcon} className="icons_footer"></img></a>
+            </div>  
 
 
         </footer>

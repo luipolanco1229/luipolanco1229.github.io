@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import ModalSU from "./ModalSU";
 
-const Forms = () => {
+const Forms = ({userPhotoState}) => {
   const [Information, setInformation] = useState({
     user: "",
-    password: "",
+    password: ""
   });
 
-  function isUser (user) {
-    if(user == false){
+  const isUser = (user) => {
+    console.log(user)
+    if(user === false){
       alert('No estás registrado')
+      userPhotoState(false); 
     }else{
       alert ('Bienvenido a Technova')
+      userPhotoState(true); 
     }
   }
 
@@ -22,41 +25,32 @@ const Forms = () => {
     });
   };
 
-  const sendData = () => {
-
-    var formData = new FormData(); 
-
-    if(Information.user != "" && Information.password != ""){
-
-      formData.append("nombre_de_usuario", Information.user)
-      formData.append("userPassword", Information.password)
-
-      fetch("",{
+  const sendData = (e) => {
+    e.preventDefault(); 
+      fetch("http://localhost/Technova/user.php?" + "user_name" + "=" + '"' + Information.user + '"' + "&" + "user_password" + "=" + '"' + Information.password +'"',{
         method: "GET",
-        body: formData, 
         headers: {
           'Accept': 'application/json'
-        },        
+        }
       })
+      .then(response => response.json())
       .then((user) => {
-        isUser(user)        
-      });      
-    }else{
-      alert('Tienes que llenar todos los campos')
-    }    
-  };
+        isUser(user); 
+      }
+      
+      )
+    }
 
   return (
     <div className="FormSignIn">
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>
-      <form className="SigIn" method="post">
+      <form className="SigIn">
         <div clasName="Items_form_signIn">
           <p>Correo o nombre usuario</p>
           <input
             placeholder="Ingrese su correo electrónico o usuario"
-            type="email"
             name="user"
             onChange={HandleInputChange}
             required
@@ -73,7 +67,7 @@ const Forms = () => {
           ></input>
         </div>
         <div clasName="div_send_sigIn">
-          <button className="Send_signIn" type="submit" >
+          <button className="Send_signIn" onClick={sendData}>
             Iniciar sesión
           </button>
         </div>

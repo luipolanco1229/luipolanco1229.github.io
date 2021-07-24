@@ -58,11 +58,7 @@ export default function TransitionsModal(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-<<<<<<< HEAD
-            <FormSingIn/>
-=======
-            <FormSI />
->>>>>>> ce4e3b914a3adead938509610fad412a634eda36
+            <FormSingIn userPhotoState={props.userPhotoState}/>
           </div>
         </Fade>
       </Modal>
