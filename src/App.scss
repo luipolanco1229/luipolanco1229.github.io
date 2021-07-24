@@ -662,7 +662,10 @@ hr.blueLine {
 }
 
 .icons_social_media{
-  margin-left: 20vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15vw;
+  margin-right: 10vw;
   margin-top: 20px;
 }
 

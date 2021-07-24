@@ -734,7 +734,15 @@
     margin-left: 20px;
   }
   .icons_social_media {
-    margin-left: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 15vw;
+    margin-right: 10vw;
     margin-top: 20px;
   }
   .allies_footer {
