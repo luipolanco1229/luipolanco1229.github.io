@@ -702,6 +702,16 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .container_footer {
+    width: 33vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .contact_footer {
     margin-left: 5vw;
     display: -webkit-box;
@@ -711,48 +721,36 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .footer_side_left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-  .contact_footer_info {
+  .flex_info_footer {
     margin-left: 4vw;
-  }
-  .footer_side_right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 100px;
-  }
-  .icons_footer {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-  }
-  .icons_social_media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 15vw;
-    margin-right: 10vw;
-    margin-top: 20px;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .allies_footer {
+    margin-left: 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 50px;
+  }
+  .icons_social_media {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .icons_footer {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
   }
   .info_footer {
     color: #ababab;
