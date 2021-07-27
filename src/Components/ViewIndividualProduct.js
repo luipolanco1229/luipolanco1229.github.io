@@ -27,12 +27,50 @@ const viewProduct = () => {
         <div className="viewProductBottom">
           <div className="viewFeactures">
             <div className="titleFeactures">
-              <span>Características ☻</span>
+              <span>Características </span>
             </div>
             <div className="longFeactures">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem odit ipsam vero labore voluptate minima illo nihil impedit aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium harum dolores at, ratione vero commodi fuga placeat, iusto eos iure sit. Quos veniam sapiente repellendus excepturi eligendi. Quaerat officiis quidem a doloribus ex?
-                    
-                </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+                odit ipsam vero labore voluptate minima illo nihil impedit
+                aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium
+                harum dolores at, ratione vero commodi fuga placeat, iusto eos
+                iure sit. Quos veniam sapiente repellendus excepturi eligendi.
+                Quaerat officiis quidem a doloribus ex?
+              </p>
+              <div className="moreFeactures">
+                <ul className="menuFeactures">
+                  <li>
+                    <p className="moreFeacturesText">Ver más ▼</p>
+                     <ul>
+                       <li>
+                         <center>
+                      <table className="feacturesTable">
+                        <tr>
+                          <td>Nombre</td> <td>A</td> 
+                        </tr>
+                        <tr>
+                          <td>Marca</td> <td>B</td> 
+                        </tr>
+                        <tr>
+                          <td>Tamaño</td> <td>C</td> 
+                        </tr>
+                        <tr>
+                          <td>Modelo</td> <td>D</td> 
+                        </tr>
+                        <tr>
+                          <td>SmartTV</td> <td>E</td> 
+                        </tr>
+                        <tr>
+                          <td>Precio</td> <td>F</td> 
+                        </tr>
+                      </table>
+                    </center>
+                       </li>
+                     </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="viewDivBuy">
