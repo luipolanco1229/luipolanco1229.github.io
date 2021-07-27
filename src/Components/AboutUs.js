@@ -6,33 +6,33 @@ const AboutUs = () => {
             <h1>Sobre nosotros</h1>
         </div>
         <div className="text_about_us">
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia quae veniam accusantium blanditiis voluptatem qui.<br></br> 
-            Consequatur est sunt ex aliquid! Nihil iusto dolor ab ea vel? Qui, consequuntur delectus officiis, temporibus esse dolor <br></br>
-            tempore a iste, laborum nesciunt similique vitae exercitationem nam laboriosam corporis quae repudiandae quis commodi placeat.</h4>
+            <h4>Technova es una tienda virtual de venta de diversos dispositivos tecnológicos<br></br> 
+           que tiene como propósito brindar la mejor atención a sus usuarios apoyado en herramientas tecnológicas<br></br>
+            las cuales permiten brindar seguridad y confianza en las compras de cada uno de sus clientes.</h4>
 
         </div>
         <div className="div_items_about_us">
             <div className="items_about_us">
                 <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
-                <h3 className="title_about_us">Lorem</h3>
+                <h3 className="title_about_us">Misión</h3>
                 <h5 className="text_items_about_us">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!
+                    Cambiar el pensamiento en las personas sobra la compra en linea y garantizar la seguridad en cada uno de nuestros procesos.     
                 </h5>
             </div>
             <div className="line_items_about_us"></div>
             <div className="items_about_us">
                 <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
-                <h3 className="title_about_us">Lorem</h3>
+                <h3 className="title_about_us">Visión</h3>
                 <h5 className="text_items_about_us">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!
+                    Ser reconocidos a nivel nacional como una empresa confiable y con una excelente calidad. 
                 </h5>
             </div>
             <div className="line_items_about_us"></div>
             <div className="items_about_us">
             <img src="https://im0-tub-com.yandex.net/i?id=8024957b629743cf4eee139179955bcd&n=13" className="img_items_about_us" alt="img_items_about_us"></img>
-                <h3 className="title_about_us">Lorem</h3>
+                <h3 className="title_about_us">Pilares</h3>
                 <h5 className="text_items_about_us">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sapiente nobis non deserunt, rerum tempora!
+                    Trabajamos en base a los principios de la cooperación, el respeto y la aceptación del cambio. 
                 </h5>
             </div>
         </div>

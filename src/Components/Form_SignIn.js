@@ -46,7 +46,7 @@ const Forms = ({userPhotoState}) => {
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>
-      <form className="SigIn">
+      <div className="SigIn">
         <div clasName="Items_form_signIn">
           <p>Correo o nombre usuario</p>
           <input
@@ -75,7 +75,7 @@ const Forms = ({userPhotoState}) => {
           Si no tienes una cuenta
           <ModalSU />
         </p>
-      </form>
+      </div>
     </div>
   );
 };

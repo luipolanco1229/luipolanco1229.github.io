@@ -33,7 +33,7 @@ const ProductCategories = () => {
           </div>
         </div>
         <div className="div_text_category">
-          <h4 className="name_category_product">Smarthphones</h4>
+          <h4 className="name_category_product">Smartphones</h4>
         </div>
       </div>
       <div className="div_category_product">

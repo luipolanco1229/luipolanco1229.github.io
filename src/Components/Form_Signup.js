@@ -69,7 +69,7 @@ const Forms_Signup = () => {
         </div>
       </div>
       <hr class="blueLine"></hr>
-      <form className="Signup" onSubmit={sendData}>
+      <div className="Signup" onSubmit={sendData}>
         
         <div clasName="Items_form_signup">
           <p>Nombres</p>
@@ -135,7 +135,7 @@ const Forms_Signup = () => {
             Crear cuenta
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 };
