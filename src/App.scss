@@ -228,21 +228,69 @@ hr.blueLine {
   transform: translate(0%,20%);
   color: white;
 }
-.gridProductContainer {
-  max-width: 100%;
-  margin: auto;
-  line-height: 50px;
-  text-align: center;
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
-  grid-gap: 60px;
+
+.productContainer{
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px black dashed;
+  margin-bottom: 60px;
 }
-.gridProductItem {
+
+.ProductItem {
   background-color: #ffffdf;
   min-width: 100%;
-  min-height: 30vh;
   margin: auto;
   text-align: center;
+}
+
+.productCard{
+  display: flex;
+  flex-direction: row;
+}
+.productCardLeft{
+  flex: 35%;
+  border: 1px solid black;
+  display: table;
+}
+.imgGrid{
+  display: table-cell;
+  vertical-align: middle;
+}
+.imgGrid>img{
+  height: 20vh;
+}
+.productCardRight{
+  flex: 65%;
+}
+
+.productHeader{
+  text-align: center;
+}
+.productName{
+  font-weight: bold;
+}
+.productPrice{
+  font-weight: bold;
+}
+
+.productCardBottom{
+  padding: 0 1vw 0 1vw;
+  text-align: left;
+  margin-left: 1vw;
+  margin-right: auto;
+}
+
+.watchProduct {
+  background-color: #209020a8;
+  border: 1px solid black;
+  min-height: 4vh;
+  width: 96%;
+  margin-left: 1vw;
+  margin-right: auto;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 1vh;
 }
 .moreProducts{
   width: 100%;
@@ -251,41 +299,6 @@ hr.blueLine {
   padding-left: 50%;
 } 
 
-.productCardTop{
-  display: grid;
-  grid-template-columns:  30% 1fr;
-  width: 100%;
-}
-
-.imgGrid{
-  border: 1px solid black;
-}
-
-.productName{
-  border: 1px solid black;
-}
-.productPrice{
-  border: 1px solid black;
-}
-
-.productCardBottom {
-  border: 1px solid black;
-  line-height: 100%;
-  padding-left: 1vw;
-  text-align: left;
-}
-
-.watchProduct {
-  background-color: #209020a8;
-  border: 1px solid black;
-  min-height: 4vh;
-  width: 90%;
-  margin-left: 1vw;
-  margin-right: auto;
-  text-align: center;
-  cursor: pointer;
-  padding-top: 1vh;
-}
 
 .viewProductBackground{
   height: 100vh;

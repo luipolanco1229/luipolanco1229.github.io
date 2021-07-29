@@ -126,6 +126,7 @@ const Forms_Signup = () => {
             placeholder="Cree una contraseña"
             type="password"
             name="password"
+            minlength="8"
             onChange={HandleInputChange}
             required
           ></input>
