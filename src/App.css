@@ -283,19 +283,28 @@
             flex: 65%;
   }
   .productHeader {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .productName {
     font-weight: bold;
+    font-size: larger;
+    height: 6vh;
+    font-size: 150%;
   }
   .productPrice {
-    font-weight: bold;
+    height: 6vh;
+    font-size: 150%;
   }
-  .productCardBottom {
-    padding: 0 1vw 0 1vw;
-    text-align: left;
-    margin-left: 1vw;
-    margin-right: auto;
+  .aditionalDetails {
+    font-weight: bold;
+    height: 5vh;
+    font-size: 150%;
   }
   .watchProduct {
     background-color: #209020a8;
@@ -381,40 +390,33 @@
   }
   .viewProductBottom .viewFeactures .titleFeactures {
     text-align: center;
-    font-size: 150%;
+    font-size: 200%;
     font-weight: bold;
   }
-  .viewProductBottom .longFeactures {
-    margin-left: 2vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .viewProductBottom .centerFeactures {
+    padding-top: 2vh;
   }
-  .viewProductBottom .longFeactures .moreFeactures > ul {
+  .viewProductBottom .moreFeactures > ul {
     list-style: none;
   }
-  .viewProductBottom .longFeactures .moreFeacturesText {
-    font-weight: bold;
-    padding-left: 24vw;
-  }
-  .viewProductBottom .longFeactures .moreFeacturesText:hover {
+  .viewProductBottom .moreFeacturesText:hover {
     cursor: pointer;
   }
-  .viewProductBottom .longFeactures .feacturesTable {
+  .viewProductBottom .feacturesTable {
     width: 60%;
-    background-color: #a7a3a3;
+    background-color: #c4d4e9;
+    font-size: large;
   }
-  .viewProductBottom .longFeactures td {
+  .viewProductBottom .feacturesTable > tr {
+    height: 5vh;
+  }
+  .viewProductBottom td {
     border: black 1px solid;
   }
-  .viewProductBottom .longFeactures .menuFeactures > li > ul {
+  .viewProductBottom .menuFeactures > li > ul {
     display: none;
   }
-  .viewProductBottom .longFeactures .menuFeactures > li:hover > ul {
+  .viewProductBottom .menuFeactures > li:hover > ul {
     display: block;
     list-style: none;
   }

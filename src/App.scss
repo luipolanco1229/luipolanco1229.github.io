@@ -265,20 +265,23 @@ hr.blueLine {
 }
 
 .productHeader{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .productName{
   font-weight: bold;
+  font-size: larger;
+  height: 6vh;
+  font-size: 150%;
 }
 .productPrice{
-  font-weight: bold;
+  height: 6vh;
+  font-size: 150%;
 }
-
-.productCardBottom{
-  padding: 0 1vw 0 1vw;
-  text-align: left;
-  margin-left: 1vw;
-  margin-right: auto;
+.aditionalDetails{
+  font-weight: bold;
+  height: 5vh;
+  font-size: 150%;
 }
 
 .watchProduct {
@@ -360,27 +363,27 @@ hr.blueLine {
     padding-top: 2%;
     .titleFeactures{
       text-align: center;
-      font-size: 150%;
+      font-size: 200%;
       font-weight: bold;
     }
   }
-  .longFeactures{
-    margin-left: 2vw;
-    display: flex;
-    flex-direction: column;
+  
+  .centerFeactures{
+    padding-top: 2vh;
+  }
     .moreFeactures>ul{
       list-style: none;
-    }
-    .moreFeacturesText{
-      font-weight: bold;
-      padding-left: 24vw;
     }
     .moreFeacturesText:hover{
       cursor:pointer;
     }
     .feacturesTable{
       width: 60%;
-      background-color: #a7a3a3;
+      background-color: #c4d4e9;
+      font-size: large;
+    }
+    .feacturesTable>tr{
+      height: 5vh;
     }
     td {
       border: black 1px solid;
@@ -392,7 +395,7 @@ hr.blueLine {
       display:block;
       list-style: none;
     }
-  }
+ 
 
   .viewDivBuy{
     min-height: 25vh;
