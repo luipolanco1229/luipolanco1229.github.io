@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/technova/static/css/main.5be6bce6.chunk.css",
-    "main.js": "/technova/static/js/main.1b46ee34.chunk.js",
-    "main.js.map": "/technova/static/js/main.1b46ee34.chunk.js.map",
+    "main.js": "/technova/static/js/main.8d20874d.chunk.js",
+    "main.js.map": "/technova/static/js/main.8d20874d.chunk.js.map",
     "runtime-main.js": "/technova/static/js/runtime-main.8a4df8f9.js",
     "runtime-main.js.map": "/technova/static/js/runtime-main.8a4df8f9.js.map",
     "static/js/2.f5bfe667.chunk.js": "/technova/static/js/2.f5bfe667.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.8a4df8f9.js",
     "static/js/2.f5bfe667.chunk.js",
     "static/css/main.5be6bce6.chunk.css",
-    "static/js/main.1b46ee34.chunk.js"
+    "static/js/main.8d20874d.chunk.js"
   ]
 }
