@@ -1,9 +1,12 @@
 import React from "react";
 import CategoryComputers from "./CategoryComputers";
 import CategoryTvs from "./CategoryTvs";
-import CategorySmarthphones from "./CategorySmarthphones";
+import CategorySmartphones from "./CategorySmarthphones";
 import CategoryGadgets from "./CategoryGadgets";
 import WatchTVmodal from "./WatchTVmodal";
+import WatchComputerModal from "./WatchComputerModal";
+import WatchSmartModal from "./WatchSmartModal";
+import WatchGadgetsModal from "./WatchGadgetsModal";
 
 const ProductCategories = () => {
   return (
@@ -22,19 +25,15 @@ const ProductCategories = () => {
             <CategoryComputers />
           </div>
         </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Computadores</h4>
-        </div>
+        <WatchComputerModal/>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
           <div className="div_img_category">
-            <CategorySmarthphones />
+            <CategorySmartphones />
           </div>
         </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Smartphones</h4>
-        </div>
+        <WatchSmartModal/>
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
@@ -42,9 +41,7 @@ const ProductCategories = () => {
             <CategoryGadgets />
           </div>
         </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Accesorios</h4>
-        </div>
+        <WatchGadgetsModal/>
       </div>
       
     </div>

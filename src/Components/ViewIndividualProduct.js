@@ -26,22 +26,10 @@ const viewProduct = () => {
 
         <div className="viewProductBottom">
           <div className="viewFeactures">
-            <div className="titleFeactures">
-              <span>Características </span>
-            </div>
-            <div className="longFeactures">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                odit ipsam vero labore voluptate minima illo nihil impedit
-                aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium
-                harum dolores at, ratione vero commodi fuga placeat, iusto eos
-                iure sit. Quos veniam sapiente repellendus excepturi eligendi.
-                Quaerat officiis quidem a doloribus ex?
-              </p>
               <div className="moreFeactures">
                 <ul className="menuFeactures">
                   <li>
-                    <p className="moreFeacturesText">Ver más ▼</p>
+                    <div className="centerFeactures"><p className="moreFeacturesText titleFeactures">Ver más ▼</p></div>
                      <ul>
                        <li>
                          <center>
@@ -71,7 +59,6 @@ const viewProduct = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
           <div className="viewDivBuy">
             <div className="buyProduct">

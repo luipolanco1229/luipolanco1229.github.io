@@ -36,7 +36,7 @@ export default function TransitionsModal(props) {
   return (
     <Fragment>
         <div className="div_text_category" onClick={handleOpen}>
-          <h4 className="name_category_product"> Televisores</h4>
+          <h4 className="name_category_product"> Celulares</h4>
         </div>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -52,7 +52,7 @@ export default function TransitionsModal(props) {
       >
          <Fade in={open}>
           <div className ={classes.paper}>
-            <WatchProducts titleName="Televisores"/>
+            <WatchProducts titleName="Celulares"/>
           </div>
         </Fade>
       </Modal>
