@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3add515.chunk.css",
+    "main.js": "/static/js/main.887a871e.chunk.js",
+    "main.js.map": "/static/js/main.887a871e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1338dd02.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1338dd02.js.map",
+    "static/js/2.f5bfe667.chunk.js": "/static/js/2.f5bfe667.chunk.js",
+    "static/js/2.f5bfe667.chunk.js.map": "/static/js/2.f5bfe667.chunk.js.map",
+    "static/js/3.9f46d34f.chunk.js": "/static/js/3.9f46d34f.chunk.js",
+    "static/js/3.9f46d34f.chunk.js.map": "/static/js/3.9f46d34f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b3add515.chunk.css.map": "/static/css/main.b3add515.chunk.css.map",
+    "static/js/2.f5bfe667.chunk.js.LICENSE.txt": "/static/js/2.f5bfe667.chunk.js.LICENSE.txt",
+    "static/media/1.b35bddf9.png": "/static/media/1.b35bddf9.png",
+    "static/media/2.4b8f27e3.png": "/static/media/2.4b8f27e3.png",
+    "static/media/developer.e00a153a.jpg": "/static/media/developer.e00a153a.jpg",
+    "static/media/instagram.661a8d22.png": "/static/media/instagram.661a8d22.png",
+    "static/media/App.css": "/static/media/particles1.40da9867.gif",
+    "static/media/people_and_phones.0ab02e5f.jpg": "/static/media/people_and_phones.0ab02e5f.jpg",
+    "static/media/people_watching_tv.3aecb3b4.jpg": "/static/media/people_watching_tv.3aecb3b4.jpg",
+    "static/media/technova-logo1.e065a57b.jpg": "/static/media/technova-logo1.e065a57b.jpg",
+    "static/media/user.178d03ca.png": "/static/media/user.178d03ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1338dd02.js",
+    "static/js/2.f5bfe667.chunk.js",
+    "static/css/main.b3add515.chunk.css",
+    "static/js/main.887a871e.chunk.js"
+  ]
+}
