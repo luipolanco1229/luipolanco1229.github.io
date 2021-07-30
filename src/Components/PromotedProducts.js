@@ -9,21 +9,21 @@ const PromotedProducts = () => {
                <img src={promotedProduct1} className="img_promoted_products"></img>
             </div>
             <div>
-            <h4>2</h4>
+            <img src={promotedProduct1} className="img_promoted_products"></img>  
             </div>
             <div>
-            <h4>3</h4>
+            <img src={promotedProduct1} className="img_promoted_products"></img> 
             </div>
         </div>
         <div className="subdivision_two_promoted_products">
             <div>
-            {/* <img src={promotedProduct2} className="img_promoted_products4"></img> */}
+            <img src={promotedProduct1} className="img_promoted_products"></img> 
             </div>
             <div>
             <h4>5</h4>
             </div>
             <div>
-            <h4>6</h4>
+            <img src={promotedProduct1} className="img_promoted_products"></img> 
             </div>
         </div>
     </div>
