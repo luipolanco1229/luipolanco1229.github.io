@@ -20,7 +20,7 @@ const WatchTVproducts = (props) => {
               <div clasName="productHeader">
                 <div className="productName">Nombre del producto</div>
                 <div className="productPrice">Marca:</div>
-                <div className="aditionalDetails">169900</div>
+                <div className="aditionalDetails">$169900</div>
               </div>
                     <ViewIndividualP />
                   
