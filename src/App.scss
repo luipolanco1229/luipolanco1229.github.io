@@ -123,28 +123,7 @@ $principalOrange: #ff9800;
 }
 
 
- 
 
-@media ( max-width: 2000px ){
-    
-    .categoryProduct{
-        background-color: white; 
-        width: 110px; 
-        height: 110px; 
-        border-radius: 100%; 
-        border: 4px solid $principalOrange; 
-        display: flex; 
-        align-items: center; 
-    }
-    .div_category_product{
-        margin-top: 70px; 
-        margin-bottom: 30px; 
-        margin-left: 12%; 
-        margin-right: 5%; 
-        cursor: pointer;
-        color: white; 
-        justify-items: center; 
-    }
 hr.blueLine {
   border: 2px solid $principalBlue;
   border-radius: 3px;
@@ -171,18 +150,20 @@ hr.blueLine {
 .background_section_product_categories {
   background-image: url(../src/images/particles1.gif);
   min-height: 37vh;
-  min-width: 100vw;
-  display: flex;
-  align-items: center;
+  width: 100%;
   overflow: auto;
 }
 
+.containerCategory{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .div_category_product {
-  margin-top: 12vh;
-  margin-bottom: 5vh;
   margin-left: 9%;
-  margin-right: 5%;
-  cursor: pointer;
+  margin-right: 6%;
+  margin-top: 3%;
   color: white;
   justify-items: center;
 }
@@ -194,12 +175,15 @@ hr.blueLine {
   border: 4px solid $principalOrange;
   display: flex;
   align-items: center;
-  overflow: auto;
 }
 
 .div_img_category {
   margin-left: auto;
   margin-right: auto;
+}
+
+.categoryh4{
+  text-align: center;
 }
 
 .sectionBackground {
@@ -219,11 +203,11 @@ hr.blueLine {
 
 .link{
   text-decoration: none;
-  color: #000;
+  color: #fff;
   transition: 0.5s;
 
   :hover {
-    color: #fff;
+    color: rgb(226, 152, 123);
   }
 
   &--text-center{
@@ -588,7 +572,7 @@ hr.blueLine {
   }
   .subdivision_two_promoted_products {
     display: grid;
-    grid-template-columns: 1fr 40% 1fr;
+    grid-template-columns: 1fr 34% 1fr;
     column-gap: 20px;
     height: 50%;
 
@@ -604,6 +588,9 @@ hr.blueLine {
   }
 }
 
+.promoted5 {
+  background-color: #ddd;
+}
 #hola {
   text-decoration: none;
 }
@@ -708,5 +695,4 @@ hr.blueLine {
 
 .info_footer {
   color: #ababab;
-}
 }
