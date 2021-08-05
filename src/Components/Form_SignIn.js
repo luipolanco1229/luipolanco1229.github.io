@@ -27,7 +27,7 @@ const Forms = ({userPhotoState}) => {
 
   const sendData = (e) => {
     e.preventDefault(); 
-      fetch("https://technova-app.herokuapp.com/user.php?" + "user_name" + "=" + '"' + Information.user + '"' + "&" + "user_password" + "=" + '"' + Information.password +'"',{
+      fetch("http://localhost/Technova/user.php?" + "user_name" + "=" + '"' + Information.user + '"' + "&" + "user_password" + "=" + '"' + Information.password +'"',{
         method: "GET",
         headers: {
           'Accept': 'application/json'
@@ -42,7 +42,7 @@ const Forms = ({userPhotoState}) => {
     }
 
   return (
-    <div className="FormSignIn">
+    <div className="FormSignIn" onSubmit={sendData}>
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>

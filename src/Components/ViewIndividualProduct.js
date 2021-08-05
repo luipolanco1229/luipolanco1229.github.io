@@ -1,12 +1,13 @@
 import React from "react";
 
-const viewProduct = () => {
+const viewProduct = ({product}) => {
+  console.log(product); 
   return (
     <div className="viewProductBackground">
       <div className="sectionBorder">
         <div className="viewProductHeader">
           <div className="viewName">
-            <span>Televisor LG 45"</span>
+            <span>{product.nombre}</span>
           </div>
           <div className="viewPrice">
             <span>1699900 COP</span>

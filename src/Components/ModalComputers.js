@@ -1,71 +1,36 @@
 import React from "react";
 import ViewIndividualP from "./ModalViewIndividualP.js";
+import { useState, useEffect } from "react";
+
  const WatchComputerProducts = (props) => {
-    // const [product, setProduct] = useState([]);
+    const [product, setProduct] = useState([]);
 
-    //   const computer = async => {
-    //      let vector = [];
-    //      try{
-    //         fetch("https://technova-app.herokuapp.com/computer_category.php", {      
-    //             method: "GET",
-    //             body: formData,
-    //               headers: {
-    //                 'Accept': 'application/json'
-    //               },
-    //             })
-    //             .then(response => response.json())
-    //             .then((product) => {
-    //                 product.forEach(pro => {
-    //                     let comp ={
-    //                         nombre: pro.nombre,
-    //                         marca: pro.marca,
-    //                         tamanio: pro.tamanio,
-    //                         modelo: pro.modelo,
-    //                         ram: pro.ram,
-    //                         almacenamiento: pro.almacenamiento,
-    //                         tipo_disco: pro.tipo_disco,
-    //                         procesador: pro.procesador,
-    //                         sistema_operativo: pro.sistema_operativo,
-    //                         precio: pro.precio,
-    //                         img: pro.img
-    //                     };
-    //                     vector.push(comp); 
-    //                 });
-    //                 setProduct(vector);
-    //             };                       
-    // catch(error){
-    //     console.log(error);
-    //  }
-    // };
+      const computer = async => {
+        
+            fetch("http://localhost/Technova/computer_category.php", {      
+                method: "GET",
+                headers: {
+                    'Accept': 'application/json'
+                },
+                })
+                .then(response => response.json())
+                .then((product) => {
+                  
+                       
+                    setProduct(product);
+                        
+                });                
+            
+            }    
+        
+        
 
-    // useEffect(() => {
-    //     computer();
-    //   }, []);
+    useEffect(() => {
+        computer();
+      }, []);
     
       
-    
-    //   const HandleInputChange = (event) => {
-    //     setInformation({
-    //       ...Information,
-    //       [event.target.name]: event.target.value,
-    //     });
-    //   };
-    
-    //   const sendData = (e) => {
-    //     e.preventDefault(); 
-    //       fetch("https://technova-app.herokuapp.com/computer_category.php",{
-    //         method: "GET",
-    //         headers: {
-    //           'Accept': 'application/json'
-    //         }
-    //       })
-    //       .then(response => response.json())
-    //       .then((user) => {
-    //         computer(user); 
-    //       }
-          
-    //       )
-    //     }
+ 
         
       
   return (
@@ -74,7 +39,9 @@ import ViewIndividualP from "./ModalViewIndividualP.js";
         <p className="sectionTitle"> {props.titleName}</p>
       </div>
 
-     <div className="productContainer">
+    {
+        product?.map((pro) => ( 
+        <div className="productContainer">
         <div className="ProductItem">
           <div className="productCard">
           <div className="productCardLeft">
@@ -84,16 +51,18 @@ import ViewIndividualP from "./ModalViewIndividualP.js";
             </div>
             <div className="productCardRight">
               <div clasName="productHeader">
-                <div className="productName" name="productName">Nombre del producto</div>
-                <div className="productPrice" name="productPrice">Marca:</div>
-                <div className="aditionalDetails" name="product">169900</div>
+                <div className="productName" name="productName">{pro.nombre}</div>
+                <div className="productPrice" name="productPrice">{pro.precio}</div>
+                <div className="aditionalDetails" name="productBrand">{pro.marca}</div>
               </div>
-                    <ViewIndividualP />
+                    <ViewIndividualP id={pro.id}/>
                   
             </div>
           </div>
          </div>
-        </div>
+        </div>)
+        )
+    }
      
       <div className="moreProducts">Next =&gt;</div>
     </div>

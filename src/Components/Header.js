@@ -1,10 +1,7 @@
 import React, { Fragment, useState } from "react";
 import ModalSI from "./ModalSI";
-import logo from "../Icons/technova-logo1.jpg";
-import user from '../Icons/user.png'
-
-
-// import user from "../Icons/user.png";
+import logo from "../icons/technova-logo1.jpg";
+import user from '../icons/user.png'
 
 const Header = () => { 
   
@@ -42,7 +39,7 @@ const Header = () => {
          </nav>
         </div> 
 
-        {/* <div className="header_side_right respMenu">
+        {/* { <div className="header_side_right respMenu">
         <input type="checkbox"></input>
           <i className="fas fa-bars"></i>
           <i className="fas fa-times"></i>
@@ -71,7 +68,7 @@ const Header = () => {
             
          </nav>
         </div>
-           */}
+           } */}
       </header>
       </Fragment>
     

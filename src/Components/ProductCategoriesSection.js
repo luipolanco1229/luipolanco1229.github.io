@@ -4,9 +4,9 @@ import CategoryTvs from "./CategoryTvs";
 import CategorySmartphones from "./CategorySmarthphones";
 import CategoryGadgets from "./CategoryGadgets";
 import WatchTVmodal from "./WatchTVmodal";
-import WatchComputerModal from "./WatchComputerModal";
 import WatchSmartModal from "./WatchSmartModal";
 import WatchGadgetsModal from "./WatchGadgetsModal";
+import { Link } from "react-router-dom";
 
 const ProductCategories = () => {
   return (
@@ -17,23 +17,27 @@ const ProductCategories = () => {
             <CategoryTvs />
           </div>
         </div>
-        <WatchTVmodal/>
+        <WatchTVmodal />
       </div>
-      <div className="div_category_product">
-        <div className="categoryProduct">
-          <div className="div_img_category">
-            <CategoryComputers />
+      <Link className='link link--text-center' to='/computers'>
+        <div className="div_category_product">
+          <div className="categoryProduct">
+            <div className="div_img_category">
+              <CategoryComputers />
+            </div>
+          </div>
+          <div >
+            <h4> Computadores</h4>
           </div>
         </div>
-        <WatchComputerModal/>
-      </div>
+      </Link>
       <div className="div_category_product">
         <div className="categoryProduct">
           <div className="div_img_category">
             <CategorySmartphones />
           </div>
         </div>
-        <WatchSmartModal/>
+        <WatchSmartModal />
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
@@ -41,9 +45,9 @@ const ProductCategories = () => {
             <CategoryGadgets />
           </div>
         </div>
-        <WatchGadgetsModal/>
+        <WatchGadgetsModal />
       </div>
-      
+
     </div>
   );
 };

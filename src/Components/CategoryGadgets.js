@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import Gadgets from "../Icons/headphone.png";
+import Gadgets from "../icons/headphone.png";
 
 const CategorySmarthphones = () => {
   return (

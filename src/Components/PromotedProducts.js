@@ -1,6 +1,6 @@
 import React from 'react';
-import promotedProduct1 from '../Images/1.png'
-import promotedProduct2 from '../Images/2.png'
+import promotedProduct1 from '../images/1.png'
+import promotedProduct2 from '../images/2.png'
 
 const PromotedProducts = () => {
     return <div className="div_promoted_products">
@@ -20,7 +20,7 @@ const PromotedProducts = () => {
             <img src={promotedProduct1} className="img_promoted_products"></img> 
             </div>
             <div>
-            <h4>5</h4>
+            <img src="https://dbibyhavas.io/es/wp-content/uploads/sites/5/2019/07/algoritmos.png" className="img_promoted_products"></img>
             </div>
             <div>
             <img src={promotedProduct1} className="img_promoted_products"></img> 

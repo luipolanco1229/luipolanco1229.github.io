@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import '../App.css';
-import developer from '../Images/developer.jpg'
-import people_and_phones from '../Images/people_and_phones.jpg'
-import people_watching_tv from '../Images/people_watching_tv.jpg'
+import developer from '../images/developer.jpg'
+import people_and_phones from '../images/people_and_phones.jpg'
+import people_watching_tv from '../images/people_watching_tv.jpg'
 
 
 

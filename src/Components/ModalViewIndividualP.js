@@ -1,4 +1,4 @@
-import React, { Fragment} from "react";
+import React, { Fragment, useEffect, useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -19,17 +19,35 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TransitionsModal(props) {
+export default function TransitionsModal({id}) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [product, setProduct] = useState({});
+  
 
   const handleOpen = () => {
     setOpen(true);
   };
+  console.log(id); 
+  const getProductById = () => {
+    fetch("http://localhost/Technova/computer_category.php?id=" +id,{
+        method: "GET",
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then((product) => {
+        setProduct(product); 
+      });   
+  }
+    
 
   const handleClose = () => {
     setOpen(false);
   };
+
+  useEffect(()=>{getProductById()}, [])
 
   return (
     <Fragment>
@@ -49,7 +67,7 @@ export default function TransitionsModal(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <IndividualProduct />
+            <IndividualProduct product = {product}/>
           </div>
         </Fade>
       </Modal>

@@ -176,7 +176,7 @@
     color: white;
   }
   .background_section_product_categories {
-    background-image: url(../src/Images/particles1.gif);
+    background-image: url(../src/images/particles1.gif);
     min-height: 37vh;
     min-width: 100vw;
     display: -webkit-box;
@@ -214,25 +214,28 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .div_text_category {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  .name_category_product {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .sectionBackground {
     height: 100vh;
-    width: 90vw;
+    width: 100%;
     overflow: auto;
   }
   .sectionHeader {
     background-color: #0d2c5b;
-    min-height: 10vw;
+    min-height: 6vw;
     width: 100%;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  .link {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .link :hover {
+    color: #fff;
+  }
+  .link--text-center {
     text-align: center;
   }
   .sectionTitle {
@@ -241,6 +244,7 @@
     -webkit-transform: translate(0%, 20%);
             transform: translate(0%, 20%);
     color: white;
+    margin: 0;
   }
   .productContainer {
     width: 80vw;
@@ -648,7 +652,7 @@
             box-shadow: 10px 10px 10px #484545;
   }
   .div_promoted_products .subdivision_two_promoted_products .img_promoted_products {
-    width: 60vh;
+    width: auto;
     height: 45vh;
   }
   #hola {
