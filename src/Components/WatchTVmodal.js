@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import WatchTVproducts from "./WatchTVproducts";
+import WatchTVproducts from './ModalTvs'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -52,7 +52,7 @@ export default function TransitionsModal(props) {
       >
          <Fade in={open}>
           <div className ={classes.paper}>
-            <WatchTVproducts />
+            <WatchTVproducts titleName="Televisores"/>
           </div>
         </Fade>
       </Modal>

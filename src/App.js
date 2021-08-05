@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
-import StartingScreen from "./Components/StartingScreen";
+import {Router} from "./router/Router"
 
 
 function App() {
-  return (
-    
+  return (    
     <div className="App">
-      <StartingScreen />
-    </div>
-   
+      <Router/>
+    </div>   
   );
 }
 

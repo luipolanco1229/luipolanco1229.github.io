@@ -1,9 +1,12 @@
 import React from "react";
 import CategoryComputers from "./CategoryComputers";
 import CategoryTvs from "./CategoryTvs";
-import CategorySmarthphones from "./CategorySmarthphones";
+import CategorySmartphones from "./CategorySmarthphones";
 import CategoryGadgets from "./CategoryGadgets";
 import WatchTVmodal from "./WatchTVmodal";
+import WatchSmartModal from "./WatchSmartModal";
+import WatchGadgetsModal from "./WatchGadgetsModal";
+import { Link } from "react-router-dom";
 
 const ProductCategories = () => {
   return (
@@ -14,27 +17,27 @@ const ProductCategories = () => {
             <CategoryTvs />
           </div>
         </div>
-        <WatchTVmodal/>
+        <WatchTVmodal />
       </div>
+      <Link className='link link--text-center' to='/computers'>
+        <div className="div_category_product">
+          <div className="categoryProduct">
+            <div className="div_img_category">
+              <CategoryComputers />
+            </div>
+          </div>
+          <div >
+            <h4> Computadores</h4>
+          </div>
+        </div>
+      </Link>
       <div className="div_category_product">
         <div className="categoryProduct">
           <div className="div_img_category">
-            <CategoryComputers />
+            <CategorySmartphones />
           </div>
         </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Computadores</h4>
-        </div>
-      </div>
-      <div className="div_category_product">
-        <div className="categoryProduct">
-          <div className="div_img_category">
-            <CategorySmarthphones />
-          </div>
-        </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Smartphones</h4>
-        </div>
+        <WatchSmartModal />
       </div>
       <div className="div_category_product">
         <div className="categoryProduct">
@@ -42,11 +45,9 @@ const ProductCategories = () => {
             <CategoryGadgets />
           </div>
         </div>
-        <div className="div_text_category">
-          <h4 className="name_category_product">Accesorios</h4>
-        </div>
+        <WatchGadgetsModal />
       </div>
-      
+
     </div>
   );
 };

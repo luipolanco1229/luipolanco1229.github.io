@@ -1,12 +1,13 @@
 import React from "react";
 
-const viewProduct = () => {
+const viewProduct = ({product}) => {
+  console.log(product); 
   return (
     <div className="viewProductBackground">
       <div className="sectionBorder">
         <div className="viewProductHeader">
           <div className="viewName">
-            <span>Televisor LG 45"</span>
+            <span>{product.nombre}</span>
           </div>
           <div className="viewPrice">
             <span>1699900 COP</span>
@@ -26,22 +27,10 @@ const viewProduct = () => {
 
         <div className="viewProductBottom">
           <div className="viewFeactures">
-            <div className="titleFeactures">
-              <span>Características </span>
-            </div>
-            <div className="longFeactures">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                odit ipsam vero labore voluptate minima illo nihil impedit
-                aperiam voluptatibus hic, iure quasi quaerat. Totam laudantium
-                harum dolores at, ratione vero commodi fuga placeat, iusto eos
-                iure sit. Quos veniam sapiente repellendus excepturi eligendi.
-                Quaerat officiis quidem a doloribus ex?
-              </p>
               <div className="moreFeactures">
                 <ul className="menuFeactures">
                   <li>
-                    <p className="moreFeacturesText">Ver más ▼</p>
+                    <div className="centerFeactures"><p className="moreFeacturesText titleFeactures">Ver más ▼</p></div>
                      <ul>
                        <li>
                          <center>
@@ -71,7 +60,6 @@ const viewProduct = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
           <div className="viewDivBuy">
             <div className="buyProduct">

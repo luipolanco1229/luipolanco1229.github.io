@@ -1,9 +1,10 @@
-import React, { Fragment, useEffect, useState} from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import IndividualProduct from "./ViewIndividualProduct";
+import WatchSmartphonesProducts from "./ModalSmartphones";
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -19,40 +20,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TransitionsModal({id}) {
+export default function TransitionsModal(props) {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
-  const [product, setProduct] = useState({});
-  
+  const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
     setOpen(true);
   };
-  console.log(id); 
-  const getProductById = () => {
-    fetch("http://localhost/Technova/computer_category.php?id=" +id,{
-        method: "GET",
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => response.json())
-      .then((product) => {
-        setProduct(product); 
-      });   
-  }
-    
 
   const handleClose = () => {
     setOpen(false);
   };
-
-  useEffect(()=>{getProductById()}, [])
+ 
 
   return (
     <Fragment>
-      <div className="watchProduct" onClick={handleOpen}>Más detalles</div>
-        
+        <div className="div_text_category" onClick={handleOpen}>
+          <h4 className="name_category_product"> Celulares</h4>
+        </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -61,13 +46,13 @@ export default function TransitionsModal({id}) {
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
-        BackdropProps={{ 
+        BackdropProps={{
           timeout: 1000,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <IndividualProduct product = {product}/>
+         <Fade in={open}>
+          <div className ={classes.paper}>
+            <WatchSmartphonesProducts titleName="Celulares"/>
           </div>
         </Fade>
       </Modal>

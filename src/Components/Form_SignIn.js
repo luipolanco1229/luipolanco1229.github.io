@@ -42,7 +42,7 @@ const Forms = ({userPhotoState}) => {
     }
 
   return (
-    <div className="FormSignIn">
+    <div className="FormSignIn" onSubmit={sendData}>
       <div className="HeaderSigIn">
         <h1>Iniciar sesión </h1>
       </div>
