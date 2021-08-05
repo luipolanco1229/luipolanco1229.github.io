@@ -1,27 +1,35 @@
 import React from 'react';
+import promotedProduct1 from '../images/promocionado1.jpg';
+import promotedProduct2 from '../images/promocionado2.jpg';
+import promotedProduct3 from '../images/promocionado3.jpg';
+import promotedProduct4 from '../images/promocionado4.jpg';
+import promotedProduct5 from '../images/promocionado5.jpg';
+import promotedProduct6 from '../images/promocionado6.jpg';
 
 const PromotedProducts = () => {
     return <div className="div_promoted_products">
         <div className="subdivision_one_promoted_products">
             <div>
-               <h4>1</h4>
+               <img src={promotedProduct3} className="img_promoted_products" alt=""></img>
             </div>
             <div>
-            <h4>2</h4>
+            <img src={promotedProduct2} className="img_promoted_products" alt=""></img>  
             </div>
             <div>
-            <h4>3</h4>
+            <img src={promotedProduct1} className="img_promoted_products" alt=""></img> 
             </div>
         </div>
         <div className="subdivision_two_promoted_products">
             <div>
-            <h4>4</h4>
+            <img src={promotedProduct4} className="img_promoted_products" alt=""></img> 
+            </div>
+            <div className="promoted5">
+                <center>
+                    <img src={promotedProduct6} className="img_promoted_products" alt="" ></img>
+                </center>
             </div>
             <div>
-            <h4>5</h4>
-            </div>
-            <div>
-            <h4>6</h4>
+            <img src={promotedProduct5} className="img_promoted_products" alt=""></img> 
             </div>
         </div>
     </div>

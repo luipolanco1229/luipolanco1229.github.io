@@ -1,7 +1,8 @@
 import React from "react";
 import ViewIndividualP from "./ModalViewIndividualP.js";
 
-const WatchTVproducts = (props) => {
+
+const WatchSmartphonesProducts = (props) => {
   return (
     <div className="sectionBackground">
       <div className="sectionHeader">
@@ -34,4 +35,4 @@ const WatchTVproducts = (props) => {
   );
 };
 
-export default WatchTVproducts;
+export default WatchSmartphonesProducts;

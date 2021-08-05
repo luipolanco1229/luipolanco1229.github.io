@@ -1,8 +1,8 @@
 import React from "react";
-import InstagramIcon from "../Icons/instagram.png";
-import TwitterIcon from "../Icons/gorjeo.png";
-import WhatsappIcon from "../Icons/whatsapp.png";
-import FacebookIcon from "../Icons/facebook.png";
+import InstagramIcon from "../icons/instagram.png";
+import TwitterIcon from "../icons/gorjeo.png";
+import WhatsappIcon from "../icons/whatsapp.png";
+import FacebookIcon from "../icons/facebook.png";
 
 const Footer = () => {
   return (

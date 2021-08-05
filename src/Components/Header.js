@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from "react";
 import ModalSI from "./ModalSI";
-import logo from "../Icons/technova-logo1.jpg";
-
-
-// import user from "../Icons/user.png";
+import logo from "../icons/technova-logo1.jpg";
+import user from '../icons/user.png'
 
 const Header = () => { 
   
@@ -37,11 +35,11 @@ const Header = () => {
             <a href="#jump_contact" className="a_items_header">
               Contacto
             </a>
-          {HasAccount === true ?  <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
+          {HasAccount === true ?  <img src={user} alt="user" className="user_photo"></img> :  <ModalSI className="button_header" userPhotoState = {userPhotoState}/> }
          </nav>
         </div> 
 
-        {/* <div className="header_side_right respMenu">
+        {/* { <div className="header_side_right respMenu">
         <input type="checkbox"></input>
           <i className="fas fa-bars"></i>
           <i className="fas fa-times"></i>
@@ -70,7 +68,7 @@ const Header = () => {
             
          </nav>
         </div>
-           */}
+           } */}
       </header>
       </Fragment>
     

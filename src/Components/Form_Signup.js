@@ -36,7 +36,7 @@ const Forms_Signup = () => {
           formData.append("userPassword", Information.password)
           
           
-          fetch("http://localhost/Technova/user.php", {      
+          fetch("https://technova-app.herokuapp.com/user.php", {      
             method: "POST",
             body: formData,
               headers: {
@@ -69,7 +69,7 @@ const Forms_Signup = () => {
         </div>
       </div>
       <hr class="blueLine"></hr>
-      <form className="Signup" onSubmit={sendData}>
+      <div className="Signup" onSubmit={sendData}>
         
         <div clasName="Items_form_signup">
           <p>Nombres</p>
@@ -132,11 +132,11 @@ const Forms_Signup = () => {
           ></input>
         </div>
         <div clasName="div_send_signUp">
-          <button className="Send_signUp" >
+          <button className="Send_signUp" onClick={sendData}>
             Crear cuenta
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 };
