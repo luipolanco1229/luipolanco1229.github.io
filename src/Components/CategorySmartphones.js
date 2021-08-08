@@ -1,17 +1,17 @@
 import React, {Fragment} from "react";
-import Smarthphones from "../icons/llamada-de-telefono-inteligente.png";
+import Smartphones from "../icons/llamada-de-telefono-inteligente.png";
 
-const CategorySmarthphones = () => {
+const CategorySmartphones = () => {
   return (
     <Fragment>
         <div className="icon_product_div">
           <img
-            src={Smarthphones}
+            src={Smartphones}
             className="icon_product"
             alt="icon_product"
-          ></img>
+          />
         </div>
     </Fragment>
   );
 };
-export default CategorySmarthphones;
+export default CategorySmartphones;

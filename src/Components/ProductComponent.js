@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const ProductComponent = ({ product }) => {
+    const pathName = useLocation().pathname.slice(1);
     return (
         <div className="productContainer">
             {/* <div className="ProductItem">
@@ -17,7 +18,7 @@ export const ProductComponent = ({ product }) => {
                             <div className="productPrice" name="productPrice">{product.precio}</div>
                             <div className="aditionalDetails" name="productBrand">{product.marca}</div>
                         </div>
-                        <Link to={`/product/${product.id_computer}`}>
+                        <Link to={`/product/${product.id}/${pathName}`}>
                             Ver más detalles
                         </Link>
                     </div>
