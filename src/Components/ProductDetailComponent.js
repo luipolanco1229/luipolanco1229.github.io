@@ -1,16 +1,16 @@
 import React from "react";
 
-const viewProduct = ({product}) => {
+export const ProductDetailComponent = ({product}) => {
   console.log(product); 
   return (
     <div className="viewProductBackground">
-      <div className="sectionBorder">
+    <div className="sectionBorder">
         <div className="viewProductHeader">
           <div className="viewName">
             <span>{product.nombre}</span>
           </div>
           <div className="viewPrice">
-            <span>1699900 COP</span>
+            <span>{product.precio}</span>
           </div>
         </div>
 
@@ -75,4 +75,3 @@ const viewProduct = ({product}) => {
   );
 };
 
-export default viewProduct;
