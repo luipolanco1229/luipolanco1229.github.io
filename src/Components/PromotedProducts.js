@@ -10,18 +10,26 @@ const PromotedProducts = () => {
     return <div className="div_promoted_products">
         <div className="subdivision_one_promoted_products">
             <div>
-               <img src={promotedProduct3} className="img_promoted_products" alt=""></img>
+                <center>
+                  <img src={promotedProduct3} className="img_promoted_products" alt=""></img>
+                </center>
             </div>
             <div>
-            <img src={promotedProduct2} className="img_promoted_products" alt=""></img>  
+               <center>
+                 <img src={promotedProduct2} className="img_promoted_products" alt=""></img>  
+               </center>
             </div>
             <div>
-            <img src={promotedProduct1} className="img_promoted_products" alt=""></img> 
+               <center>
+                  <img src={promotedProduct1} className="img_promoted_products" alt=""></img> 
+               </center>
             </div>
         </div>
         <div className="subdivision_two_promoted_products">
             <div>
-            <img src={promotedProduct4} className="img_promoted_products" alt=""></img> 
+                <center>
+                  <img src={promotedProduct4} className="img_promoted_products" alt=""></img> 
+                </center>
             </div>
             <div className="promoted5">
                 <center>
@@ -29,7 +37,9 @@ const PromotedProducts = () => {
                 </center>
             </div>
             <div>
-            <img src={promotedProduct5} className="img_promoted_products" alt=""></img> 
+                <center>
+                 <img src={promotedProduct5} className="img_promoted_products" alt=""></img> 
+                </center>
             </div>
         </div>
     </div>

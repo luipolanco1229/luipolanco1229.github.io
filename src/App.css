@@ -663,8 +663,7 @@ hr.blueLine {
 }
 
 .div_promoted_products .subdivision_one_promoted_products div {
-  display: block;
-  background-color: #009688a8;
+  background-color: #fff;
   -webkit-box-shadow: 10px 10px 10px #484545;
           box-shadow: 10px 10px 10px #484545;
 }
@@ -685,8 +684,7 @@ hr.blueLine {
 }
 
 .div_promoted_products .subdivision_two_promoted_products div {
-  display: block;
-  background-color: #009688a8;
+  background-color: #fff;
   -webkit-box-shadow: 10px 10px 10px #484545;
           box-shadow: 10px 10px 10px #484545;
 }
