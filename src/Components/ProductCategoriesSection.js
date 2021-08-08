@@ -45,7 +45,7 @@ const ProductCategories = () => {
           </div>
         </div>
       </Link>
-      <Link className='link link--text-center' to='/smartphones'>
+      <Link className='link link--text-center' to='/gadgets'>
         <div className="div_category_product">
           <div className="categoryProduct">
             <div className="div_img_category">
