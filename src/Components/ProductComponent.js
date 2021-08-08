@@ -5,7 +5,7 @@ export const ProductComponent = ({ product }) => {
     const pathName = useLocation().pathname.slice(1);
     return (
         <div className="productContainer">
-            {/* <div className="ProductItem">
+            <div className="ProductItem">
                 <div className="productCard">
                     <div className="productCardLeft">
                         <div className="imgGrid">
@@ -23,11 +23,11 @@ export const ProductComponent = ({ product }) => {
                         </Link>
                     </div>
                 </div> 
-            </div>*/}
-            <div className="productContainerDiv">
+            </div>
+            {/* <div className="productContainerDiv">
                 <div className="productSectionLeft">Lorem</div>
                 <div className="productSectionRight">Lorem</div>
-            </div>
+            </div> */}
         </div>
     ); 
 }

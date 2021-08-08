@@ -45,10 +45,11 @@ const ProductCategories = () => {
           <div>
             <h4> Smartphones</h4>
           </div>
-        </Link>
-      </div>
-      <div className="div_category_product">
-        <Link className="link link--text-center" to="/smartphones">
+         </Link>
+        </div>
+     
+        <div className="div_category_product">
+         <Link className='link link--text-center' to='/gadgets'>
           <div className="categoryProduct">
             <div className="div_img_category">
               <CategoryGadgets />
