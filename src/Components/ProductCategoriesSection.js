@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const ProductCategories = () => {
   return (
     <div className="background_section_product_categories">
+      <div className="div_section_product_categories">
 
-      <div className="dic_section_product_categories">
       <div className="div_category_product">
         <Link className="link link--text-center" to="/tvs">
           <div className="categoryProduct">
@@ -22,6 +22,7 @@ const ProductCategories = () => {
           </div>
         </Link>
       </div>
+
       <div className="div_category_product">
         <Link className="link link--text-center" to="/computers">
           <div className="categoryProduct">

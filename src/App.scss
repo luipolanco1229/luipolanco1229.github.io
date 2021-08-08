@@ -154,16 +154,17 @@ hr.blueLine {
   overflow: auto;
 }
 
-.containerCategory{
+.div_section_product_categories{
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .div_category_product {
-  margin-left: 9%;
-  margin-right: 6%;
-  margin-top: 3%;
+  width:20%;
+  // margin-left: 9%;
+  // margin-right: 6%;
+   margin-top: 3%;
   color: white;
   justify-items: center;
 }
