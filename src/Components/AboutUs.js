@@ -31,7 +31,7 @@ const AboutUs = () => {
             </div>
             <div className="line_items_about_us"></div>
             <div className="items_about_us">
-            <img src="https://media.mktg.workday.com/is/image/workday/illustration-people-on-bar-charts-1?fmt=png-alpha&wid=1000" className="img_items_about_us" alt="img_items_about_us"></img>
+                <img src="https://media.mktg.workday.com/is/image/workday/illustration-people-on-bar-charts-1?fmt=png" className="img_items_about_us" alt="img_items_about_us"></img>
                 <h3 className="title_about_us">Pilares</h3>
                 <h5 className="text_items_about_us">
                     Trabajamos en base a los principios de la cooperación, el respeto y la aceptación del cambio. 

@@ -18,7 +18,7 @@ const ProductCategories = () => {
             </div>
           </div>
           <div>
-            <h4> Televisores</h4>
+            <h4 className="categoryh4"> Televisores</h4>
           </div>
         </Link>
       </div>
