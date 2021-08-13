@@ -177,15 +177,21 @@ hr.blueLine {
   overflow: auto;
 }
 
-.div_category_product {
-  margin-top: 12vh;
-  margin-bottom: 5vh;
-  margin-left: 9%;
-  margin-right: 5%;
-  cursor: pointer;
-  color: white;
-  justify-items: center;
+.div_section_product_categories{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
+
+.div_category_product {
+  margin-left: 12%;
+  // margin-right: 6%;
+   margin-top: 3%;
+  color: white;
+  text-align: center;
+}
+
+
 .categoryProduct {
   background-color: white;
   width: 8rem;
@@ -194,7 +200,6 @@ hr.blueLine {
   border: 4px solid $principalOrange;
   display: flex;
   align-items: center;
-  overflow: auto;
 }
 
 .div_img_category {
@@ -202,15 +207,33 @@ hr.blueLine {
   margin-right: auto;
 }
 
+.categoryh4{
+  text-align: center;
+}
+.link{
+  
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+
+  :hover {
+    color: rgb(226, 152, 123);
+  }
+
+  &--text-center{
+    text-align: center;
+  }
+}
+
 .sectionBackground {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
-  overflow: auto;
+  // overflow: auto;
 }
 
 .sectionHeader {
   background-color: $principalBlue;
-  min-height: 6vw;
+  min-height: 9vw;
   width: 100%;
   margin-bottom: 10vh;
   text-align: center;
@@ -263,13 +286,11 @@ hr.blueLine {
   border: 1px solid black;
   display: table;
 }
-.imgGrid{
-  display: table-cell;
-  vertical-align: middle;
-}
+
 .imgGrid>img{
-  height: 20vh;
+  height: 30vh;
 }
+
 .productCardRight{
   flex: 65%;
 }
@@ -435,6 +456,99 @@ hr.blueLine {
       justify-content: center;
     }
   }
+}
+
+.individualProductBackground{
+  border: 1px solid black;
+}
+.individualProductHeader{
+  height: 15vh;
+}
+.individualProductTitle{
+  vertical-align: middle;
+  height: 100%;
+  padding-top: 2%;
+  font-size: 180%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: $principalBlue;
+}
+
+.individualProductCenter{
+  height: 64vh;
+  width: 100%;
+  background-color: #ffffbf;
+  display: flex;
+  flex-direction: row;
+}
+
+.individualProductImg{
+  width: 40vw;
+  height: 85%;
+  margin-top: 2%; 
+  margin-left: 7%;
+  margin-right: 5%;
+}
+.individualProductImg>center>img{
+  height: 50vh;
+  width: auto;
+  margin-top: 2vh;
+}
+
+.individualProductFeactures{
+  width: 40vw;
+  height: 85%;
+  margin-top: 2%; 
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.individualProductFeacturesTitle{
+  background-color: $principalBlue;
+  flex:20%;
+  text-align:center;
+  color: white;
+  font-weight: bold;
+  padding-top: 4%;
+  border: 1px solid black;
+}
+.individualProductFeacturesTable{
+  background-color: #c4d4e9;
+  font-size: large;
+  font-weight: 500;
+  flex:80%;
+  padding: 5% 5% 0 5%;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+
+.individualProductShop{
+  height: 21vh;
+  display: flex;
+  flex-direction: row;
+  background-color: $principalBlue;
+  border: 1px solid black;
+  font-size: 150%;
+  font-weight: bold;
+}
+.individualProductBuy{
+  background-color: rgb(105, 216, 72);
+  width: 40vw;
+  height: 70%;
+  margin-top: 3vh; 
+  margin-left: 7%;
+  margin-right: 5%;
+  text-align: center;
+  border: 1px solid black;
+}
+.individualProductCar{
+  background-color: $principalOrange;
+  width: 40vw;
+  height: 70%;
+  margin-top: 3vh; 
+  text-align: center;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 768px) {
@@ -709,4 +823,179 @@ hr.blueLine {
 .info_footer {
   color: #ababab;
 }
+}
+
+
+.productContainerFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.productContainerDiv{
+  width: 40vw;
+  height: auto;
+  margin-left: 2vw;
+  border: 1px solid black;
+  display:flex;
+  flex-direction: column;
+  font-size: large;
+  background-color: #f1f1f1;
+}
+
+.cardIndividualProductTop{
+  height: 7vh;
+  padding-bottom: 8%;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: $principalBlue;
+  color: white;
+}
+.cardIndividualProductTop>p{
+  text-align: center;
+}
+.cardIndividualProductBottom{
+  min-height: 30vh;
+  display:flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.cardIndividualProductLeft{
+  flex: 60%;
+  border: 1px solid black;
+  text-align: center;
+}
+.cardIndividualProductLeft>p{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.cardIndividualProductLeft>p>img{
+  height: 25vh;
+  width: auto;
+}
+.cardIndividualProductRight{
+  flex: 40%;
+}
+.cardIndividualRightFlex{
+  display:flex;
+  height: 81%;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.cardPrice{
+  flex:40%;
+  padding: 15% 0 5% 5%;
+}
+.cardBrand{
+  flex: 40%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.cardMoreDetailsCenter{
+  text-align: center;
+  height: 7vh;
+ 
+  border: 1px dashed black;
+  background: $principalOrange;
+  p{
+    color: white;
+    margin: 0;
+    margin-top: 10%; 
+  }
+}
+
+
+.individualProductBackground{
+  border: 1px solid black;
+}
+.individualProductHeader{
+  height: 15vh;
+}
+.individualProductTitle{
+  vertical-align: middle;
+  height: 100%;
+  padding-top: 2%;
+  font-size: 180%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: $principalBlue;
+}
+
+.individualProductCenter{
+  height: 64vh;
+  width: 100%;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+}
+
+.individualProductImg{
+  width: 40vw;
+  height: 85%;
+  margin-top: 2%; 
+  margin-left: 7%;
+  margin-right: 5%;
+}
+.individualProductImg>center>img{
+  height: 50vh;
+  width: auto;
+  margin-top: 2vh;
+}
+
+.individualProductFeactures{
+  width: 40vw;
+  height: 85%;
+  margin-top: 2%; 
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.individualProductFeacturesTitle{
+  background-color: $principalBlue;
+  flex:20%;
+  text-align:center;
+  color: white;
+  font-weight: bold;
+  padding-top: 4%;
+  border: 1px solid black;
+}
+.individualProductFeacturesTable{
+  background-color: #c4d4e9;
+  font-size: large;
+  font-weight: 500;
+  flex:80%;
+  padding: 5% 5% 0 5%;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+
+.individualProductShop{
+  height: 21vh;
+  display: flex;
+  flex-direction: row;
+  background-color: $principalBlue;
+  border: 1px solid black;
+  font-size: 150%;
+  font-weight: bold;
+}
+.individualProductBuy{
+  background-color: rgb(105, 216, 72);
+  width: 40vw;
+  height: 70%;
+  margin-top: 3vh; 
+  margin-left: 7%;
+  margin-right: 5%;
+  text-align: center;
+  border: 1px solid black;
+}
+.individualProductCar{
+  background-color: $principalOrange;
+  width: 40vw;
+  height: 70%;
+  margin-top: 3vh; 
+  text-align: center;
+  border: 1px solid black;
 }
