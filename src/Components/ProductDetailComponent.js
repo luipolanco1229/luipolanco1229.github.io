@@ -3,6 +3,44 @@ import React from "react";
 export const ProductDetailComponent = ({product}) => {
   console.log(product); 
   return (
+
+    <div className="individualProductBackground">
+      <div className="individualProductHeader">
+        <div className="individualProductTitle">{product.nombre}</div>
+      </div>
+      <div className="individualProductCenter">
+        <div className="individualProductImg">
+          <center>
+            <img src ={product.img} alt="individualimg"></img>
+          </center>
+        </div>
+        <div className="individualProductFeactures">
+          <div className="individualProductFeacturesTitle">Características</div>
+          <div className="individualProductFeacturesTable">
+            <b>Marca:</b> {product.marca}
+            <hr></hr><b>Precio:</b>
+             {product.precio}
+             
+            {/* 
+            Agregar lógica para que se creen caracteristicas según los elementos de cada categoría<hr></hr>
+            Caracteristica 3: Lorem
+            <hr></hr>
+            Caracteristica 4: Lorem
+            <hr></hr>
+            Caracteristica 5: Lorem
+            <hr></hr>
+            Caracteristica 6: Lorem
+            <hr></hr> */}
+          </div>
+        </div>
+      </div>
+      <div className="individualProductShop">
+        <div className="individualProductBuy"><p>Comprar</p></div>
+        <div className="individualProductCar"><p>Añadir al carrito</p></div>
+      </div>
+    </div>
+
+
     // <div className="viewProductBackground">
     // <div className="sectionBorder">
     //     <div className="viewProductHeader">
@@ -72,42 +110,6 @@ export const ProductDetailComponent = ({product}) => {
     //     </div>
     //   </div>
     // </div>
-    <div className="individualProductBackground">
-      <div className="individualProductHeader">
-        <div className="individualProductTitle">Nombre del producto</div>
-      </div>
-      <div className="individualProductCenter">
-        <div className="individualProductImg">
-          <center>
-            <img
-              src="https://image.flaticon.com/icons/png/512/1554/1554561.png"
-              alt="package"
-            ></img>
-          </center>
-        </div>
-        <div className="individualProductFeactures">
-          <div className="individualProductFeacturesTitle">Características</div>
-          <div className="individualProductFeacturesTable">
-            Marca: Lorem
-            <hr></hr>
-            Precio: $$$$$
-            <hr></hr>
-            Caracteristica 3: Lorem
-            <hr></hr>
-            Caracteristica 4: Lorem
-            <hr></hr>
-            Caracteristica 5: Lorem
-            <hr></hr>
-            Caracteristica 6: Lorem
-            <hr></hr>
-          </div>
-        </div>
-      </div>
-      <div className="individualProductShop">
-        <div className="individualProductBuy"><p>Comprar</p></div>
-        <div className="individualProductCar"><p>Añadir al carrito</p></div>
-      </div>
-    </div>
   );
 };
 
